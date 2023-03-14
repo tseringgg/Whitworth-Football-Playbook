@@ -1,0 +1,66 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/michaelsmith/Desktop/Whitworth_Stuff/Spring 2023/CS 472/ReadFromExcelFIle/ReadFromExcelFIle/ReadFromExcelFIle.csproj": {}
+  },
+  "projects": {
+    "/Users/michaelsmith/Desktop/Whitworth_Stuff/Spring 2023/CS 472/ReadFromExcelFIle/ReadFromExcelFIle/ReadFromExcelFIle.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/michaelsmith/Desktop/Whitworth_Stuff/Spring 2023/CS 472/ReadFromExcelFIle/ReadFromExcelFIle/ReadFromExcelFIle.csproj",
+        "projectName": "ReadFromExcelFIle",
+        "projectPath": "/Users/michaelsmith/Desktop/Whitworth_Stuff/Spring 2023/CS 472/ReadFromExcelFIle/ReadFromExcelFIle/ReadFromExcelFIle.csproj",
+        "packagesPath": "/Users/michaelsmith/.nuget/packages/",
+        "outputPath": "/Users/michaelsmith/Desktop/Whitworth_Stuff/Spring 2023/CS 472/ReadFromExcelFIle/ReadFromExcelFIle/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/michaelsmith/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "IronXL.Excel": {
+              "target": "Package",
+              "version": "[2023.2.5, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.408/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
