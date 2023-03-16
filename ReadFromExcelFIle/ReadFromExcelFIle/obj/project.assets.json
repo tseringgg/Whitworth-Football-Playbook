@@ -297,11 +297,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/michaelsmith/Desktop/Whitworth_Stuff/Spring 2023/CS 472/ReadFromExcelFIle/ReadFromExcelFIle/ReadFromExcelFIle.csproj",
+      "projectUniqueName": "/Users/michaelsmith/Desktop/Whitworth_Stuff/Spring 2023/CS 472/whitworth-football/ReadFromExcelFIle/ReadFromExcelFIle/ReadFromExcelFIle.csproj",
       "projectName": "ReadFromExcelFIle",
-      "projectPath": "/Users/michaelsmith/Desktop/Whitworth_Stuff/Spring 2023/CS 472/ReadFromExcelFIle/ReadFromExcelFIle/ReadFromExcelFIle.csproj",
+      "projectPath": "/Users/michaelsmith/Desktop/Whitworth_Stuff/Spring 2023/CS 472/whitworth-football/ReadFromExcelFIle/ReadFromExcelFIle/ReadFromExcelFIle.csproj",
       "packagesPath": "/Users/michaelsmith/.nuget/packages/",
-      "outputPath": "/Users/michaelsmith/Desktop/Whitworth_Stuff/Spring 2023/CS 472/ReadFromExcelFIle/ReadFromExcelFIle/obj/",
+      "outputPath": "/Users/michaelsmith/Desktop/Whitworth_Stuff/Spring 2023/CS 472/whitworth-football/ReadFromExcelFIle/ReadFromExcelFIle/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/michaelsmith/.config/NuGet/NuGet.Config"

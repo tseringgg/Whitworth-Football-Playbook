@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "22YenMS+jLL7LxnQv/HoO9eSDJMA4/VO4MKAkMbh235xBTgrC5oiAIOl9M/pIrN0n8PfLwblgwV3Q6M+TCuxhQ==",
+  "dgSpecHash": "1WhwziEbD13DhdfMkjbkdWn89jDuuxlYroOXFf98OA4r5fBUKO9kurm4ObOCjeR5HmaIeTZ2kNHsavhTGdjxqA==",
   "success": true,
-  "projectFilePath": "/Users/michaelsmith/Desktop/Whitworth_Stuff/Spring 2023/CS 472/ReadFromExcelFIle/ReadFromExcelFIle/ReadFromExcelFIle.csproj",
+  "projectFilePath": "/Users/michaelsmith/Desktop/Whitworth_Stuff/Spring 2023/CS 472/whitworth-football/ReadFromExcelFIle/ReadFromExcelFIle/ReadFromExcelFIle.csproj",
   "expectedPackageFiles": [
     "/Users/michaelsmith/.nuget/packages/bitmiracle.libtiff.net/2.4.649/bitmiracle.libtiff.net.2.4.649.nupkg.sha512",
     "/Users/michaelsmith/.nuget/packages/ironsoftware.system.drawing/2023.2.12/ironsoftware.system.drawing.2023.2.12.nupkg.sha512",

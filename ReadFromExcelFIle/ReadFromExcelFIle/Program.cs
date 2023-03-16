@@ -12,14 +12,25 @@ namespace ReadFromExcelFIle
 
             Console.WriteLine(Directory.GetCurrentDirectory());
 
-            WorkBook workBook = WorkBook.Load(@"../../../PACIFIC_CALL_SHEET_MIX_DOWNS.xlsx");
-            WorkSheet workSheet = workBook.GetWorkSheet("CALL_SHEET_PG_1_(11x17)");
+
+            Console.WriteLine("Enter workBook name: ");
+            // Create a string variable and get user input from the keyboard and store it in the variable
+            string workBookName = Console.ReadLine();
+
+            //WorkBook workBook = WorkBook.Load(@"../../../PACIFIC_CALL_SHEET_MIX_DOWNS.xlsx");
+            WorkBook workBook = WorkBook.Load(@"../../../" + workBookName + ".xlsx");
+
+
+            Console.WriteLine("Enter workBook Sheet: ");
+            // Create a string variable and get user input from the keyboard and store it in the variable
+            string workBookSheet = Console.ReadLine();
+
+            //WorkSheet workSheet = workBook.GetWorkSheet("CALL_SHEET_PG_1_(11x17)");
+            WorkSheet workSheet = workBook.GetWorkSheet(workBookSheet);
 
             // TODO: Take the workBook and Sheets as input
             //       - Take the range as inputs
             //       - Write error case if the workbook and sheets are not valid
-
-
 
 
             // Gets All Data between this range
