@@ -13,23 +13,37 @@ namespace ReadFromExcelFIle
             Console.WriteLine(Directory.GetCurrentDirectory());
 
 
-            Console.WriteLine("Enter workBook name: ");
-            // Create a string variable and get user input from the keyboard and store it in the variable
-            string workBookName = Console.ReadLine();
+            // TAKE WORKBOOK NAME AND SHEET AS INPUT.
 
-            //WorkBook workBook = WorkBook.Load(@"../../../PACIFIC_CALL_SHEET_MIX_DOWNS.xlsx");
-            WorkBook workBook = WorkBook.Load(@"../../../" + workBookName + ".xlsx");
+            //Console.WriteLine("Enter workBook name: ");
+            //// Create a string variable and get user input from the keyboard and store it in the variable
+            //string workBookName = Console.ReadLine();
+            //WorkBook workBook = WorkBook.Load(@"../../../" + workBookName + ".xlsx");
 
 
-            Console.WriteLine("Enter workBook Sheet: ");
-            // Create a string variable and get user input from the keyboard and store it in the variable
-            string workBookSheet = Console.ReadLine();
+            //Console.WriteLine("Enter workBook Sheet: ");
+            //// Create a string variable and get user input from the keyboard and store it in the variable
+            //string workBookSheet = Console.ReadLine();
+            //WorkSheet workSheet = workBook.GetWorkSheet(workBookSheet);
 
-            //WorkSheet workSheet = workBook.GetWorkSheet("CALL_SHEET_PG_1_(11x17)");
-            WorkSheet workSheet = workBook.GetWorkSheet(workBookSheet);
 
-            // TODO: Take the workBook and Sheets as input
-            //       - Take the range as inputs
+            // TAKE RANGE AS INPUT
+
+            //Console.WriteLine("Enter First Element of Range: ");
+            //string range1 = Console.ReadLine();
+
+            //Console.WriteLine("Enter First Element of Range: ");
+            //string range2 = Console.ReadLine();
+
+            //string range = range1 + ":" + range2;
+            //IronXL.Range myRange = workSheet.GetRange(range);
+
+
+
+            WorkBook workBook = WorkBook.Load(@"../../../PACIFIC_CALL_SHEET_MIX_DOWNS.xlsx");
+            WorkSheet workSheet = workBook.GetWorkSheet("CALL_SHEET_PG_1_(11x17)");
+
+            // TODO: 
             //       - Write error case if the workbook and sheets are not valid
 
 
