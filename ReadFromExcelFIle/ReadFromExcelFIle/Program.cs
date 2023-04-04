@@ -1,6 +1,7 @@
 ﻿using System;
 using IronXL;
 using System.IO;
+using System.Collections.Generic;
 
 namespace ReadFromExcelFIle
 {
@@ -49,7 +50,40 @@ namespace ReadFromExcelFIle
 
             // Gets All Data between this range
             IronXL.Range myRange = workSheet.GetRange("D4:E19");
-            Console.WriteLine(myRange);
+
+            //Console.WriteLine(myRange.ToString());
+
+            string[] rows = myRange.ToString().Split(new char[] { ' ', '\n', '\t' });
+
+            List<List<string>> plays = new List<List<string>>();
+            List<string> singlePlay = new List<string>();
+
+            //Console.WriteLine(rows[0].Length);
+
+            for (int i = 0; i < rows.Length; i++)
+            {
+                if(rows[i] == "GUN" && i != 0)
+                {
+                    plays.Add(singlePlay);
+                    Console.WriteLine("Full Play = " + singlePlay);
+                    singlePlay.Clear();
+                    Console.WriteLine();
+                }
+                singlePlay.Add(rows[i]);
+            }
+            plays.Add(singlePlay);
+
+            //Console.WriteLine(plays[0]);
+
+            foreach (List<string> i in plays)
+            {
+                foreach (string j in i)
+                {
+                    Console.Write(j + " ");
+                }
+                Console.WriteLine();
+            }
+
 
 
 
