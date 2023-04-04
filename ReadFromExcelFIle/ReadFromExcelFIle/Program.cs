@@ -58,31 +58,72 @@ namespace ReadFromExcelFIle
             List<List<string>> plays = new List<List<string>>();
             List<string> singlePlay = new List<string>();
 
+            bool ResetPlayVect = false;
+
             //Console.WriteLine(rows[0].Length);
 
+            int k = 0;
             for (int i = 0; i < rows.Length; i++)
             {
                 if(rows[i] == "GUN" && i != 0)
                 {
+
                     plays.Add(singlePlay);
-                    Console.WriteLine("Full Play = " + singlePlay);
-                    singlePlay.Clear();
+                    //ResetPlayVect = true;
+                    for (int j = 0; j < plays[k].Count; j++)
+                    {
+                        Console.Write(plays[0][j] + " ");
+                    }
                     Console.WriteLine();
+                    Console.WriteLine();
+                    singlePlay.Clear();
+                    k++;
                 }
+                //if (ResetPlayVect) {
+                //    plays.Add(singlePlay);
+                //    singlePlay.Clear();
+
+
+                //    ResetPlayVect = false;
+
+                //    for (int j = 0; j < plays[k].Count; j++)
+                //    {
+                //        Console.Write(plays[0][j] + " ");
+                //    }
+                //    Console.WriteLine();
+                //    Console.WriteLine();
+                //    k++;
+                //}
+                
                 singlePlay.Add(rows[i]);
             }
             plays.Add(singlePlay);
 
-            //Console.WriteLine(plays[0]);
+            Console.WriteLine("Plays Count: " + plays.Count);
 
-            foreach (List<string> i in plays)
-            {
-                foreach (string j in i)
-                {
-                    Console.Write(j + " ");
-                }
-                Console.WriteLine();
+            for (int i = 0; i < plays.Count; i++) {
+                Console.WriteLine(plays[0][i]);
             }
+            
+
+
+
+
+            //for (int i = 0; i < plays.Count; i++) {
+            //    for (int j = 0; j < plays.Count; j++) {
+            //        Console.Write(plays[i][j] + " ");
+            //    }
+            //    Console.WriteLine();
+            //}
+
+            //foreach (List<string> i in plays)
+            //{
+            //    foreach (string j in i)
+            //    {
+            //        Console.Write(j + " ");
+            //    }
+            //    Console.WriteLine();
+            //}
 
 
 
