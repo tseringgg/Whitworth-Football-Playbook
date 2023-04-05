@@ -53,91 +53,124 @@ namespace ReadFromExcelFIle
 
             //Console.WriteLine(myRange.ToString());
 
-            string[] rows = myRange.ToString().Split(new char[] { ' ', '\n', '\t' });
+            string[] rows = myRange.ToString().Split(new char[] {'\n'});
 
-            List<List<string>> plays = new List<List<string>>();
+            List<List<string>> plays = new List<List<string>>(15);
             List<string> singlePlay = new List<string>();
+            List<string> temp = new List<string>();
 
-            bool ResetPlayVect = false;
+            string[] splitSinglePlay;
 
-            //Console.WriteLine(rows[0].Length);
+            //Console.Write(rows.Length);
 
-            int k = 0;
-            for (int i = 0; i < rows.Length; i++)
-            {
-                if(rows[i] == "GUN" && i != 0)
-                {
-
-                    plays.Add(singlePlay);
-                    //ResetPlayVect = true;
-                    for (int j = 0; j < plays[k].Count; j++)
-                    {
-                        Console.Write(plays[0][j] + " ");
-                    }
-                    Console.WriteLine();
-                    Console.WriteLine();
-                    singlePlay.Clear();
-                    k++;
-                }
-                //if (ResetPlayVect) {
-                //    plays.Add(singlePlay);
-                //    singlePlay.Clear();
-
-
-                //    ResetPlayVect = false;
-
-                //    for (int j = 0; j < plays[k].Count; j++)
-                //    {
-                //        Console.Write(plays[0][j] + " ");
-                //    }
-                //    Console.WriteLine();
-                //    Console.WriteLine();
-                //    k++;
-                //}
-                
+            for (int i = 0; i < rows.Length; i++) {
+        
                 singlePlay.Add(rows[i]);
+                splitSinglePlay = singlePlay[i].Split(' ', '\t');
+
+                // TODO: Try to add empty lists to plays
+                //plays.Add(temp); // Adds an empty list to plays to get ready to add TempVect Elements in that spot
+
+                // TODO: Fix Temp getting populated with splitSinglePlay somehow
+
+                for (int j = 0; j < splitSinglePlay.Length; j++) {
+
+                    // Adds the list "split single play" to the list "play" 
+                    plays[i].Add(splitSinglePlay[j]);
+                }
+
+                // TODO: Need to Reset/Clear TempVect right here
+
+                Console.WriteLine();
+                temp.Clear();
+   
             }
-            plays.Add(singlePlay);
 
-            Console.WriteLine("Plays Count: " + plays.Count);
 
-            for (int i = 0; i < plays.Count; i++) {
-                Console.WriteLine(plays[0][i]);
+            // Prints the contents of the 2D List "play"
+            for (int j = 0; j < plays.Count; j++)
+            {
+                for (int k = 0; k < plays[j].Count; k++)
+                {
+                    Console.Write(plays[j][k] + " ");
+                }
+                Console.WriteLine();
             }
             
-
-
-
-
-            //for (int i = 0; i < plays.Count; i++) {
-            //    for (int j = 0; j < plays.Count; j++) {
-            //        Console.Write(plays[i][j] + " ");
-            //    }
-            //    Console.WriteLine();
-            //}
-
-            //foreach (List<string> i in plays)
-            //{
-            //    foreach (string j in i)
-            //    {
-            //        Console.Write(j + " ");
-            //    }
-            //    Console.WriteLine();
-            //}
-
-
-
-
-            // Gets value from all ints in the range
-            //Console.WriteLine(myRange.Value);
-
-            //for (var i = 0; i <= 4; i++)
-            //{
-            //    Console.WriteLine(myRange.AllColumnsInRange[i]);
-
-            //}
-
-
         }
     }
 }
+
+
+//plays.Add();
+// Add an empty array
+//Console.Write(singlePlay[i]);
+//if (singlePlay[i] is string) {
+//    Console.Write("SinglePlay is a string");
+//}
+
+//Console.Write("Temp Vect: " + tempVect);
+
+//for (int i = 0; i < singlePlay.Count; i++)
+//{
+//    tempString = singlePlay[i];
+//    tempString.Split(' ', '\t');
+//    //plays.Add(tempString.Split(' ', '\t'));
+
+//    Console.WriteLine("Temp String: " + tempString);
+
+//    // TODO: NEED TO FIGURE OUT HOW TO ADD tempString TO 2D VECT "plays"
+
+//    //for (int j = 0; j < singlePlay[i].Length; j++)
+//    //{
+
+//    //    Console.Write(singlePlay[i][j]);
+//    //}
+//    ////Console.Write
+//    //Console.WriteLine();
+
+//}
+
+//Console.WriteLine(rows[0].Length);
+
+//int k = 0;
+//for (int i = 0; i < rows.Length; i++)
+//{
+
+//}
+
+
+//Console.WriteLine("Plays Count: " + plays.Count);
+
+//for (int i = 0; i < plays.Count; i++) {
+//    Console.WriteLine(plays[0][i]);
+//}
+
+
+
+
+
+//for (int i = 0; i < plays.Count; i++) {
+//    for (int j = 0; j < plays.Count; j++) {
+//        Console.Write(plays[i][j] + " ");
+//    }
+//    Console.WriteLine();
+//}
+
+//foreach (List<string> i in plays)
+//{
+//    foreach (string j in i)
+//    {
+//        Console.Write(j + " ");
+//    }
+//    Console.WriteLine();
+//}
+
+// Gets value from all ints in the range
+//Console.WriteLine(myRange.Value);
+
+//for (var i = 0; i <= 4; i++)
+//{
+//    Console.WriteLine(myRange.AllColumnsInRange[i]);
+
+//}
