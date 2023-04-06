@@ -11,43 +11,29 @@
           "lib/netstandard2.0/BitMiracle.LibTiff.NET.dll": {}
         }
       },
-      "IronSoftware.System.Drawing/2023.2.12": {
+      "IronSoftware.System.Drawing/2023.3.3": {
         "type": "package",
         "dependencies": {
           "BitMiracle.LibTiff.NET": "2.4.649",
           "SixLabors.ImageSharp": "2.1.3"
         },
         "compile": {
-          "lib/netstandard2.0/IronSoftware.Drawing.Common.dll": {},
-          "lib/netstandard2.0/SixLabors.Fonts.dll": {},
-          "lib/netstandard2.0/SixLabors.ImageSharp.Drawing.dll": {}
+          "lib/netstandard2.0/IronSoftware.Drawing.Common.dll": {}
         },
         "runtime": {
-          "lib/netstandard2.0/IronSoftware.Drawing.Common.dll": {},
-          "lib/netstandard2.0/SixLabors.Fonts.dll": {},
-          "lib/netstandard2.0/SixLabors.ImageSharp.Drawing.dll": {}
+          "lib/netstandard2.0/IronSoftware.Drawing.Common.dll": {}
         }
       },
-      "IronXL.Excel/2023.2.5": {
+      "IronXL.Excel/2023.4.13": {
         "type": "package",
         "dependencies": {
-          "IronSoftware.System.Drawing": "2023.2.12",
-          "Microsoft.Extensions.Logging.Abstractions": "2.1.0"
+          "IronSoftware.System.Drawing": "2023.3.3"
         },
         "compile": {
           "lib/netstandard2.0/IronXL.dll": {}
         },
         "runtime": {
           "lib/netstandard2.0/IronXL.dll": {}
-        }
-      },
-      "Microsoft.Extensions.Logging.Abstractions/2.1.0": {
-        "type": "package",
-        "compile": {
-          "lib/netstandard2.0/Microsoft.Extensions.Logging.Abstractions.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/Microsoft.Extensions.Logging.Abstractions.dll": {}
         }
       },
       "Microsoft.NETCore.Platforms/5.0.0": {
@@ -118,10 +104,10 @@
         "lib/netstandard2.0/BitMiracle.LibTiff.NET.xml"
       ]
     },
-    "IronSoftware.System.Drawing/2023.2.12": {
-      "sha512": "EU0VfpU67G1KNhylbYVwGrCQr2HFRH9vFKKn6P99KFfVtHBCP6Eb9SfaQVnYlXur700U24WJ2W4Axqfio7BmlA==",
+    "IronSoftware.System.Drawing/2023.3.3": {
+      "sha512": "GRA/kBUMJErkn7bs7i3y2LZOT3YMAcWFnKZh0Nm+2xvey3jIA0A7q2Ti4RP0AAnZ3eUuhpyRl2bymQgyzc9z2w==",
       "type": "package",
-      "path": "ironsoftware.system.drawing/2023.2.12",
+      "path": "ironsoftware.system.drawing/2023.3.3",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -129,27 +115,25 @@
         "README.txt",
         "docs/README.md",
         "images/ironsoftware-logo.png",
-        "ironsoftware.system.drawing.2023.2.12.nupkg.sha512",
+        "ironsoftware.system.drawing.2023.3.3.nupkg.sha512",
         "ironsoftware.system.drawing.nuspec",
         "lib/netstandard2.0/IronSoftware.Drawing.Common.deps.json",
         "lib/netstandard2.0/IronSoftware.Drawing.Common.dll",
         "lib/netstandard2.0/IronSoftware.Drawing.Common.pdb",
-        "lib/netstandard2.0/IronSoftware.Drawing.Common.xml",
-        "lib/netstandard2.0/SixLabors.Fonts.dll",
-        "lib/netstandard2.0/SixLabors.ImageSharp.Drawing.dll"
+        "lib/netstandard2.0/IronSoftware.Drawing.Common.xml"
       ]
     },
-    "IronXL.Excel/2023.2.5": {
-      "sha512": "E4PAGiw7c5jbg0DTU5jUVukjco6nAEvULrtVSlh36GgXKjRyi7e/Svcyh+49GYmM8HTQCYJ1ACpwMvpDtPEMNw==",
+    "IronXL.Excel/2023.4.13": {
+      "sha512": "l/1plC3lI2Xr46HqGDpaKlBGIWcaRaVNL7jD2Qi/MVX+bFeORJW2kdKoTW0pD7oajaMJoUzNIifM40zlDvJkNQ==",
       "type": "package",
-      "path": "ironxl.excel/2023.2.5",
+      "path": "ironxl.excel/2023.4.13",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "EULA.txt",
         "docs/README.md",
         "images/iron-logo-128.png",
-        "ironxl.excel.2023.2.5.nupkg.sha512",
+        "ironxl.excel.2023.4.13.nupkg.sha512",
         "ironxl.excel.nuspec",
         "lib/netstandard2.0/IronXL.dll",
         "lib/netstandard2.0/IronXL.dll.config",
@@ -157,19 +141,6 @@
         "lib/netstandard2.0/IronXL.xml",
         "readme-setup.txt",
         "readme.txt"
-      ]
-    },
-    "Microsoft.Extensions.Logging.Abstractions/2.1.0": {
-      "sha512": "GfD2VtvN9z1W+m6pZZe98yh9VWTSdNY2dZSxtca9uFIY6aBI6twvskMvLO/ktClBOTQmAov/7Em+IWFlHepa0A==",
-      "type": "package",
-      "path": "microsoft.extensions.logging.abstractions/2.1.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/netstandard2.0/Microsoft.Extensions.Logging.Abstractions.dll",
-        "lib/netstandard2.0/Microsoft.Extensions.Logging.Abstractions.xml",
-        "microsoft.extensions.logging.abstractions.2.1.0.nupkg.sha512",
-        "microsoft.extensions.logging.abstractions.nuspec"
       ]
     },
     "Microsoft.NETCore.Platforms/5.0.0": {
@@ -288,28 +259,35 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
-      "IronXL.Excel >= 2023.2.5"
+      "IronXL.Excel >= 2023.4.13"
     ]
   },
   "packageFolders": {
-    "/Users/michaelsmith/.nuget/packages/": {}
+    "C:\\Users\\ajt44\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/michaelsmith/Desktop/Whitworth_Stuff/Spring 2023/CS 472/whitworth-football/ReadFromExcelFIle/ReadFromExcelFIle/ReadFromExcelFIle.csproj",
+      "projectUniqueName": "C:\\Users\\ajt44\\OneDrive\\Documents\\softwareEngineering\\seTests\\fullProj1\\whitworth-football\\ReadFromExcelFIle\\ReadFromExcelFIle\\ReadFromExcelFIle.csproj",
       "projectName": "ReadFromExcelFIle",
-      "projectPath": "/Users/michaelsmith/Desktop/Whitworth_Stuff/Spring 2023/CS 472/whitworth-football/ReadFromExcelFIle/ReadFromExcelFIle/ReadFromExcelFIle.csproj",
-      "packagesPath": "/Users/michaelsmith/.nuget/packages/",
-      "outputPath": "/Users/michaelsmith/Desktop/Whitworth_Stuff/Spring 2023/CS 472/whitworth-football/ReadFromExcelFIle/ReadFromExcelFIle/obj/",
+      "projectPath": "C:\\Users\\ajt44\\OneDrive\\Documents\\softwareEngineering\\seTests\\fullProj1\\whitworth-football\\ReadFromExcelFIle\\ReadFromExcelFIle\\ReadFromExcelFIle.csproj",
+      "packagesPath": "C:\\Users\\ajt44\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\ajt44\\OneDrive\\Documents\\softwareEngineering\\seTests\\fullProj1\\whitworth-football\\ReadFromExcelFIle\\ReadFromExcelFIle\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "/Users/michaelsmith/.config/NuGet/NuGet.Config"
+        "C:\\Users\\ajt44\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -330,7 +308,7 @@
         "dependencies": {
           "IronXL.Excel": {
             "target": "Package",
-            "version": "[2023.2.5, )"
+            "version": "[2023.4.13, )"
           }
         },
         "imports": [
@@ -348,7 +326,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.408/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }

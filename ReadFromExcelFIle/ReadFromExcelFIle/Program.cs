@@ -49,41 +49,32 @@ namespace ReadFromExcelFIle
 
 
             // Gets All Data between this range
-            IronXL.Range myRange = workSheet.GetRange("D4:E19");
+            IronXL.Range myRange = workSheet.GetRange("D4:E8");
 
             //Console.WriteLine(myRange.ToString());
 
             string[] rows = myRange.ToString().Split(new char[] {'\n'});
 
-            List<List<string>> plays = new List<List<string>>(15);
+            List<List<string>> plays = new List<List<string>>();
             List<string> singlePlay = new List<string>();
-            List<string> temp = new List<string>();
+            
 
             string[] splitSinglePlay;
-
-            //Console.Write(rows.Length);
 
             for (int i = 0; i < rows.Length; i++) {
         
                 singlePlay.Add(rows[i]);
-                splitSinglePlay = singlePlay[i].Split(' ', '\t');
-
-                // TODO: Try to add empty lists to "plays" so I can add "Split Single Play" to them
-                //plays.Add(temp); // Adds an empty list to plays to get ready to add TempVect Elements in that spot
-
-
-                // TODO: Fix Temp getting populated with splitSinglePlay somehow
-
-                for (int j = 0; j < splitSinglePlay.Length; j++) {
-
-                    // Adds the list "split single play" to the list "play" 
-                    plays[i].Add(splitSinglePlay[j]);
+                splitSinglePlay = singlePlay[i].Split(' ', '\t', '\r');
+                List<string> temp = new List<string>();
+                foreach (string s in splitSinglePlay)
+                {
+                    temp.Add(s);
                 }
 
-                // TODO: Need to Reset/Clear TempVect right here
+                // TODO: Try to add empty lists to "plays" so I can add "Split Single Play" to them
+                plays.Add(temp); // Adds an empty list to plays to get ready to add TempVect Elements in that spot
 
-                Console.WriteLine();
-                //temp.Clear();
+                
    
             }
 

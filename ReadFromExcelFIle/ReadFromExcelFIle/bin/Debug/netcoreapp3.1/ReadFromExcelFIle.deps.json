@@ -8,7 +8,7 @@
     ".NETCoreApp,Version=v3.1": {
       "ReadFromExcelFIle/1.0.0": {
         "dependencies": {
-          "IronXL.Excel": "2023.2.5"
+          "IronXL.Excel": "2023.4.13"
         },
         "runtime": {
           "ReadFromExcelFIle.dll": {}
@@ -22,43 +22,26 @@
           }
         }
       },
-      "IronSoftware.System.Drawing/2023.2.12": {
+      "IronSoftware.System.Drawing/2023.3.3": {
         "dependencies": {
           "BitMiracle.LibTiff.NET": "2.4.649",
           "SixLabors.ImageSharp": "2.1.3"
         },
         "runtime": {
           "lib/netstandard2.0/IronSoftware.Drawing.Common.dll": {
-            "assemblyVersion": "2023.2.0.12",
-            "fileVersion": "2023.2.0.12"
-          },
-          "lib/netstandard2.0/SixLabors.Fonts.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.0.0.0"
-          },
-          "lib/netstandard2.0/SixLabors.ImageSharp.Drawing.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.0.0.0"
+            "assemblyVersion": "2023.3.3.0",
+            "fileVersion": "2023.3.3.0"
           }
         }
       },
-      "IronXL.Excel/2023.2.5": {
+      "IronXL.Excel/2023.4.13": {
         "dependencies": {
-          "IronSoftware.System.Drawing": "2023.2.12",
-          "Microsoft.Extensions.Logging.Abstractions": "2.1.0"
+          "IronSoftware.System.Drawing": "2023.3.3"
         },
         "runtime": {
           "lib/netstandard2.0/IronXL.dll": {
-            "assemblyVersion": "2023.2.5.0",
-            "fileVersion": "2023.2.5.0"
-          }
-        }
-      },
-      "Microsoft.Extensions.Logging.Abstractions/2.1.0": {
-        "runtime": {
-          "lib/netstandard2.0/Microsoft.Extensions.Logging.Abstractions.dll": {
-            "assemblyVersion": "2.1.0.0",
-            "fileVersion": "2.1.0.18136"
+            "assemblyVersion": "2023.4.13.0",
+            "fileVersion": "2023.4.13.0"
           }
         }
       },
@@ -118,26 +101,19 @@
       "path": "bitmiracle.libtiff.net/2.4.649",
       "hashPath": "bitmiracle.libtiff.net.2.4.649.nupkg.sha512"
     },
-    "IronSoftware.System.Drawing/2023.2.12": {
+    "IronSoftware.System.Drawing/2023.3.3": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-EU0VfpU67G1KNhylbYVwGrCQr2HFRH9vFKKn6P99KFfVtHBCP6Eb9SfaQVnYlXur700U24WJ2W4Axqfio7BmlA==",
-      "path": "ironsoftware.system.drawing/2023.2.12",
-      "hashPath": "ironsoftware.system.drawing.2023.2.12.nupkg.sha512"
+      "sha512": "sha512-GRA/kBUMJErkn7bs7i3y2LZOT3YMAcWFnKZh0Nm+2xvey3jIA0A7q2Ti4RP0AAnZ3eUuhpyRl2bymQgyzc9z2w==",
+      "path": "ironsoftware.system.drawing/2023.3.3",
+      "hashPath": "ironsoftware.system.drawing.2023.3.3.nupkg.sha512"
     },
-    "IronXL.Excel/2023.2.5": {
+    "IronXL.Excel/2023.4.13": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-E4PAGiw7c5jbg0DTU5jUVukjco6nAEvULrtVSlh36GgXKjRyi7e/Svcyh+49GYmM8HTQCYJ1ACpwMvpDtPEMNw==",
-      "path": "ironxl.excel/2023.2.5",
-      "hashPath": "ironxl.excel.2023.2.5.nupkg.sha512"
-    },
-    "Microsoft.Extensions.Logging.Abstractions/2.1.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-GfD2VtvN9z1W+m6pZZe98yh9VWTSdNY2dZSxtca9uFIY6aBI6twvskMvLO/ktClBOTQmAov/7Em+IWFlHepa0A==",
-      "path": "microsoft.extensions.logging.abstractions/2.1.0",
-      "hashPath": "microsoft.extensions.logging.abstractions.2.1.0.nupkg.sha512"
+      "sha512": "sha512-l/1plC3lI2Xr46HqGDpaKlBGIWcaRaVNL7jD2Qi/MVX+bFeORJW2kdKoTW0pD7oajaMJoUzNIifM40zlDvJkNQ==",
+      "path": "ironxl.excel/2023.4.13",
+      "hashPath": "ironxl.excel.2023.4.13.nupkg.sha512"
     },
     "Microsoft.NETCore.Platforms/5.0.0": {
       "type": "package",
