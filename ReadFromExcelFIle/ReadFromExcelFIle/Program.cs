@@ -68,8 +68,9 @@ namespace ReadFromExcelFIle
                 singlePlay.Add(rows[i]);
                 splitSinglePlay = singlePlay[i].Split(' ', '\t');
 
-                // TODO: Try to add empty lists to plays
+                // TODO: Try to add empty lists to "plays" so I can add "Split Single Play" to them
                 //plays.Add(temp); // Adds an empty list to plays to get ready to add TempVect Elements in that spot
+
 
                 // TODO: Fix Temp getting populated with splitSinglePlay somehow
 
@@ -82,7 +83,7 @@ namespace ReadFromExcelFIle
                 // TODO: Need to Reset/Clear TempVect right here
 
                 Console.WriteLine();
-                temp.Clear();
+                //temp.Clear();
    
             }
 
