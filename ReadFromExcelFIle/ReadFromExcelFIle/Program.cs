@@ -5,6 +5,7 @@ using System.Collections.Generic;
 
 namespace ReadFromExcelFIle
 {
+
     class Program
     {
         static void Main(string[] args)
@@ -49,7 +50,7 @@ namespace ReadFromExcelFIle
 
 
             // Gets All Data between this range
-            IronXL.Range myRange = workSheet.GetRange("D4:E8");
+            IronXL.Range myRange = workSheet.GetRange("D4:E4");
 
             //Console.WriteLine(myRange.ToString());
 
@@ -90,79 +91,35 @@ namespace ReadFromExcelFIle
             }
             
         }
+
+
+        class Play {
+            // "side" = left/right, "strength" = strong/weak
+            string qb, formation, side, h, strength, passProtection, passDescription, x, y, z;
+
+            // Name with underscore is the actual object for player coordinates
+            Player qb_, rb_, x_, y_, z_, h_;
+
+            void QueryPlayer () {
+
+            }
+
+            void GenerateVSDX() {
+
+            }
+
+        }
+
+
+        struct Player {
+            float x, y;
+            List<List<float>> arrowSteps;
+        }
+
+        class PlaySheet {
+
+        }
+
+
     }
 }
-
-
-//plays.Add();
-// Add an empty array
-//Console.Write(singlePlay[i]);
-//if (singlePlay[i] is string) {
-//    Console.Write("SinglePlay is a string");
-//}
-
-//Console.Write("Temp Vect: " + tempVect);
-
-//for (int i = 0; i < singlePlay.Count; i++)
-//{
-//    tempString = singlePlay[i];
-//    tempString.Split(' ', '\t');
-//    //plays.Add(tempString.Split(' ', '\t'));
-
-//    Console.WriteLine("Temp String: " + tempString);
-
-//    // TODO: NEED TO FIGURE OUT HOW TO ADD tempString TO 2D VECT "plays"
-
-//    //for (int j = 0; j < singlePlay[i].Length; j++)
-//    //{
-
-//    //    Console.Write(singlePlay[i][j]);
-//    //}
-//    ////Console.Write
-//    //Console.WriteLine();
-
-//}
-
-//Console.WriteLine(rows[0].Length);
-
-//int k = 0;
-//for (int i = 0; i < rows.Length; i++)
-//{
-
-//}
-
-
-//Console.WriteLine("Plays Count: " + plays.Count);
-
-//for (int i = 0; i < plays.Count; i++) {
-//    Console.WriteLine(plays[0][i]);
-//}
-
-
-
-
-
-//for (int i = 0; i < plays.Count; i++) {
-//    for (int j = 0; j < plays.Count; j++) {
-//        Console.Write(plays[i][j] + " ");
-//    }
-//    Console.WriteLine();
-//}
-
-//foreach (List<string> i in plays)
-//{
-//    foreach (string j in i)
-//    {
-//        Console.Write(j + " ");
-//    }
-//    Console.WriteLine();
-//}
-
-// Gets value from all ints in the range
-//Console.WriteLine(myRange.Value);
-
-//for (var i = 0; i <= 4; i++)
-//{
-//    Console.WriteLine(myRange.AllColumnsInRange[i]);
-
-//}

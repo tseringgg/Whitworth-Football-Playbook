@@ -29,10 +29,7 @@
 /Users/michaelsmith/Desktop/Whitworth_Stuff/Spring 2023/CS 472/whitworth-football/ReadFromExcelFIle/ReadFromExcelFIle/bin/Debug/netcoreapp3.1/ReadFromExcelFIle.pdb
 /Users/michaelsmith/Desktop/Whitworth_Stuff/Spring 2023/CS 472/whitworth-football/ReadFromExcelFIle/ReadFromExcelFIle/bin/Debug/netcoreapp3.1/BitMiracle.LibTiff.NET.dll
 /Users/michaelsmith/Desktop/Whitworth_Stuff/Spring 2023/CS 472/whitworth-football/ReadFromExcelFIle/ReadFromExcelFIle/bin/Debug/netcoreapp3.1/IronSoftware.Drawing.Common.dll
-/Users/michaelsmith/Desktop/Whitworth_Stuff/Spring 2023/CS 472/whitworth-football/ReadFromExcelFIle/ReadFromExcelFIle/bin/Debug/netcoreapp3.1/SixLabors.Fonts.dll
-/Users/michaelsmith/Desktop/Whitworth_Stuff/Spring 2023/CS 472/whitworth-football/ReadFromExcelFIle/ReadFromExcelFIle/bin/Debug/netcoreapp3.1/SixLabors.ImageSharp.Drawing.dll
 /Users/michaelsmith/Desktop/Whitworth_Stuff/Spring 2023/CS 472/whitworth-football/ReadFromExcelFIle/ReadFromExcelFIle/bin/Debug/netcoreapp3.1/IronXL.dll
-/Users/michaelsmith/Desktop/Whitworth_Stuff/Spring 2023/CS 472/whitworth-football/ReadFromExcelFIle/ReadFromExcelFIle/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Logging.Abstractions.dll
 /Users/michaelsmith/Desktop/Whitworth_Stuff/Spring 2023/CS 472/whitworth-football/ReadFromExcelFIle/ReadFromExcelFIle/bin/Debug/netcoreapp3.1/SixLabors.ImageSharp.dll
 /Users/michaelsmith/Desktop/Whitworth_Stuff/Spring 2023/CS 472/whitworth-football/ReadFromExcelFIle/ReadFromExcelFIle/bin/Debug/netcoreapp3.1/System.Runtime.CompilerServices.Unsafe.dll
 /Users/michaelsmith/Desktop/Whitworth_Stuff/Spring 2023/CS 472/whitworth-football/ReadFromExcelFIle/ReadFromExcelFIle/bin/Debug/netcoreapp3.1/System.Text.Encoding.CodePages.dll
@@ -46,25 +43,25 @@
 /Users/michaelsmith/Desktop/Whitworth_Stuff/Spring 2023/CS 472/whitworth-football/ReadFromExcelFIle/ReadFromExcelFIle/obj/Debug/netcoreapp3.1/ReadFromExcelFIle.dll
 /Users/michaelsmith/Desktop/Whitworth_Stuff/Spring 2023/CS 472/whitworth-football/ReadFromExcelFIle/ReadFromExcelFIle/obj/Debug/netcoreapp3.1/ReadFromExcelFIle.pdb
 /Users/michaelsmith/Desktop/Whitworth_Stuff/Spring 2023/CS 472/whitworth-football/ReadFromExcelFIle/ReadFromExcelFIle/obj/Debug/netcoreapp3.1/ReadFromExcelFIle.genruntimeconfig.cache
-C:\Users\ajt44\OneDrive\Documents\softwareEngineering\seTests\fullProj1\whitworth-football\ReadFromExcelFIle\ReadFromExcelFIle\bin\Debug\netcoreapp3.1\ReadFromExcelFIle.exe
-C:\Users\ajt44\OneDrive\Documents\softwareEngineering\seTests\fullProj1\whitworth-football\ReadFromExcelFIle\ReadFromExcelFIle\bin\Debug\netcoreapp3.1\ReadFromExcelFIle.deps.json
-C:\Users\ajt44\OneDrive\Documents\softwareEngineering\seTests\fullProj1\whitworth-football\ReadFromExcelFIle\ReadFromExcelFIle\bin\Debug\netcoreapp3.1\ReadFromExcelFIle.runtimeconfig.json
-C:\Users\ajt44\OneDrive\Documents\softwareEngineering\seTests\fullProj1\whitworth-football\ReadFromExcelFIle\ReadFromExcelFIle\bin\Debug\netcoreapp3.1\ReadFromExcelFIle.runtimeconfig.dev.json
-C:\Users\ajt44\OneDrive\Documents\softwareEngineering\seTests\fullProj1\whitworth-football\ReadFromExcelFIle\ReadFromExcelFIle\bin\Debug\netcoreapp3.1\ReadFromExcelFIle.dll
-C:\Users\ajt44\OneDrive\Documents\softwareEngineering\seTests\fullProj1\whitworth-football\ReadFromExcelFIle\ReadFromExcelFIle\bin\Debug\netcoreapp3.1\ReadFromExcelFIle.pdb
-C:\Users\ajt44\OneDrive\Documents\softwareEngineering\seTests\fullProj1\whitworth-football\ReadFromExcelFIle\ReadFromExcelFIle\bin\Debug\netcoreapp3.1\BitMiracle.LibTiff.NET.dll
-C:\Users\ajt44\OneDrive\Documents\softwareEngineering\seTests\fullProj1\whitworth-football\ReadFromExcelFIle\ReadFromExcelFIle\bin\Debug\netcoreapp3.1\IronSoftware.Drawing.Common.dll
-C:\Users\ajt44\OneDrive\Documents\softwareEngineering\seTests\fullProj1\whitworth-football\ReadFromExcelFIle\ReadFromExcelFIle\bin\Debug\netcoreapp3.1\IronXL.dll
-C:\Users\ajt44\OneDrive\Documents\softwareEngineering\seTests\fullProj1\whitworth-football\ReadFromExcelFIle\ReadFromExcelFIle\bin\Debug\netcoreapp3.1\SixLabors.ImageSharp.dll
-C:\Users\ajt44\OneDrive\Documents\softwareEngineering\seTests\fullProj1\whitworth-football\ReadFromExcelFIle\ReadFromExcelFIle\bin\Debug\netcoreapp3.1\System.Runtime.CompilerServices.Unsafe.dll
-C:\Users\ajt44\OneDrive\Documents\softwareEngineering\seTests\fullProj1\whitworth-football\ReadFromExcelFIle\ReadFromExcelFIle\bin\Debug\netcoreapp3.1\System.Text.Encoding.CodePages.dll
-C:\Users\ajt44\OneDrive\Documents\softwareEngineering\seTests\fullProj1\whitworth-football\ReadFromExcelFIle\ReadFromExcelFIle\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Text.Encoding.CodePages.dll
-C:\Users\ajt44\OneDrive\Documents\softwareEngineering\seTests\fullProj1\whitworth-football\ReadFromExcelFIle\ReadFromExcelFIle\obj\Debug\netcoreapp3.1\ReadFromExcelFIle.csproj.AssemblyReference.cache
-C:\Users\ajt44\OneDrive\Documents\softwareEngineering\seTests\fullProj1\whitworth-football\ReadFromExcelFIle\ReadFromExcelFIle\obj\Debug\netcoreapp3.1\ReadFromExcelFIle.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\ajt44\OneDrive\Documents\softwareEngineering\seTests\fullProj1\whitworth-football\ReadFromExcelFIle\ReadFromExcelFIle\obj\Debug\netcoreapp3.1\ReadFromExcelFIle.AssemblyInfoInputs.cache
-C:\Users\ajt44\OneDrive\Documents\softwareEngineering\seTests\fullProj1\whitworth-football\ReadFromExcelFIle\ReadFromExcelFIle\obj\Debug\netcoreapp3.1\ReadFromExcelFIle.AssemblyInfo.cs
-C:\Users\ajt44\OneDrive\Documents\softwareEngineering\seTests\fullProj1\whitworth-football\ReadFromExcelFIle\ReadFromExcelFIle\obj\Debug\netcoreapp3.1\ReadFromExcelFIle.csproj.CoreCompileInputs.cache
-C:\Users\ajt44\OneDrive\Documents\softwareEngineering\seTests\fullProj1\whitworth-football\ReadFromExcelFIle\ReadFromExcelFIle\obj\Debug\netcoreapp3.1\ReadFromExcelFIle.csproj.CopyComplete
-C:\Users\ajt44\OneDrive\Documents\softwareEngineering\seTests\fullProj1\whitworth-football\ReadFromExcelFIle\ReadFromExcelFIle\obj\Debug\netcoreapp3.1\ReadFromExcelFIle.dll
-C:\Users\ajt44\OneDrive\Documents\softwareEngineering\seTests\fullProj1\whitworth-football\ReadFromExcelFIle\ReadFromExcelFIle\obj\Debug\netcoreapp3.1\ReadFromExcelFIle.pdb
-C:\Users\ajt44\OneDrive\Documents\softwareEngineering\seTests\fullProj1\whitworth-football\ReadFromExcelFIle\ReadFromExcelFIle\obj\Debug\netcoreapp3.1\ReadFromExcelFIle.genruntimeconfig.cache
+C:/Users/ajt44/OneDrive/Documents/softwareEngineering/seTests/fullProj1/whitworth-football/ReadFromExcelFIle/ReadFromExcelFIle/bin/Debug/netcoreapp3.1/ReadFromExcelFIle.exe
+C:/Users/ajt44/OneDrive/Documents/softwareEngineering/seTests/fullProj1/whitworth-football/ReadFromExcelFIle/ReadFromExcelFIle/bin/Debug/netcoreapp3.1/ReadFromExcelFIle.deps.json
+C:/Users/ajt44/OneDrive/Documents/softwareEngineering/seTests/fullProj1/whitworth-football/ReadFromExcelFIle/ReadFromExcelFIle/bin/Debug/netcoreapp3.1/ReadFromExcelFIle.runtimeconfig.json
+C:/Users/ajt44/OneDrive/Documents/softwareEngineering/seTests/fullProj1/whitworth-football/ReadFromExcelFIle/ReadFromExcelFIle/bin/Debug/netcoreapp3.1/ReadFromExcelFIle.runtimeconfig.dev.json
+C:/Users/ajt44/OneDrive/Documents/softwareEngineering/seTests/fullProj1/whitworth-football/ReadFromExcelFIle/ReadFromExcelFIle/bin/Debug/netcoreapp3.1/ReadFromExcelFIle.dll
+C:/Users/ajt44/OneDrive/Documents/softwareEngineering/seTests/fullProj1/whitworth-football/ReadFromExcelFIle/ReadFromExcelFIle/bin/Debug/netcoreapp3.1/ReadFromExcelFIle.pdb
+C:/Users/ajt44/OneDrive/Documents/softwareEngineering/seTests/fullProj1/whitworth-football/ReadFromExcelFIle/ReadFromExcelFIle/bin/Debug/netcoreapp3.1/BitMiracle.LibTiff.NET.dll
+C:/Users/ajt44/OneDrive/Documents/softwareEngineering/seTests/fullProj1/whitworth-football/ReadFromExcelFIle/ReadFromExcelFIle/bin/Debug/netcoreapp3.1/IronSoftware.Drawing.Common.dll
+C:/Users/ajt44/OneDrive/Documents/softwareEngineering/seTests/fullProj1/whitworth-football/ReadFromExcelFIle/ReadFromExcelFIle/bin/Debug/netcoreapp3.1/IronXL.dll
+C:/Users/ajt44/OneDrive/Documents/softwareEngineering/seTests/fullProj1/whitworth-football/ReadFromExcelFIle/ReadFromExcelFIle/bin/Debug/netcoreapp3.1/SixLabors.ImageSharp.dll
+C:/Users/ajt44/OneDrive/Documents/softwareEngineering/seTests/fullProj1/whitworth-football/ReadFromExcelFIle/ReadFromExcelFIle/bin/Debug/netcoreapp3.1/System.Runtime.CompilerServices.Unsafe.dll
+C:/Users/ajt44/OneDrive/Documents/softwareEngineering/seTests/fullProj1/whitworth-football/ReadFromExcelFIle/ReadFromExcelFIle/bin/Debug/netcoreapp3.1/System.Text.Encoding.CodePages.dll
+C:/Users/ajt44/OneDrive/Documents/softwareEngineering/seTests/fullProj1/whitworth-football/ReadFromExcelFIle/ReadFromExcelFIle/bin/Debug/netcoreapp3.1/runtimes/win/lib/netcoreapp2.0/System.Text.Encoding.CodePages.dll
+C:/Users/ajt44/OneDrive/Documents/softwareEngineering/seTests/fullProj1/whitworth-football/ReadFromExcelFIle/ReadFromExcelFIle/obj/Debug/netcoreapp3.1/ReadFromExcelFIle.csproj.AssemblyReference.cache
+C:/Users/ajt44/OneDrive/Documents/softwareEngineering/seTests/fullProj1/whitworth-football/ReadFromExcelFIle/ReadFromExcelFIle/obj/Debug/netcoreapp3.1/ReadFromExcelFIle.GeneratedMSBuildEditorConfig.editorconfig
+C:/Users/ajt44/OneDrive/Documents/softwareEngineering/seTests/fullProj1/whitworth-football/ReadFromExcelFIle/ReadFromExcelFIle/obj/Debug/netcoreapp3.1/ReadFromExcelFIle.AssemblyInfoInputs.cache
+C:/Users/ajt44/OneDrive/Documents/softwareEngineering/seTests/fullProj1/whitworth-football/ReadFromExcelFIle/ReadFromExcelFIle/obj/Debug/netcoreapp3.1/ReadFromExcelFIle.AssemblyInfo.cs
+C:/Users/ajt44/OneDrive/Documents/softwareEngineering/seTests/fullProj1/whitworth-football/ReadFromExcelFIle/ReadFromExcelFIle/obj/Debug/netcoreapp3.1/ReadFromExcelFIle.csproj.CoreCompileInputs.cache
+C:/Users/ajt44/OneDrive/Documents/softwareEngineering/seTests/fullProj1/whitworth-football/ReadFromExcelFIle/ReadFromExcelFIle/obj/Debug/netcoreapp3.1/ReadFromExcelFIle.csproj.CopyComplete
+C:/Users/ajt44/OneDrive/Documents/softwareEngineering/seTests/fullProj1/whitworth-football/ReadFromExcelFIle/ReadFromExcelFIle/obj/Debug/netcoreapp3.1/ReadFromExcelFIle.dll
+C:/Users/ajt44/OneDrive/Documents/softwareEngineering/seTests/fullProj1/whitworth-football/ReadFromExcelFIle/ReadFromExcelFIle/obj/Debug/netcoreapp3.1/ReadFromExcelFIle.pdb
+C:/Users/ajt44/OneDrive/Documents/softwareEngineering/seTests/fullProj1/whitworth-football/ReadFromExcelFIle/ReadFromExcelFIle/obj/Debug/netcoreapp3.1/ReadFromExcelFIle.genruntimeconfig.cache
