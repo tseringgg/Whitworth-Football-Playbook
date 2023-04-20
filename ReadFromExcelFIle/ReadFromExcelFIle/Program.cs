@@ -100,6 +100,10 @@ namespace ReadFromExcelFIle
             // Name with underscore is the actual object for player coordinates
             Player qb_, rb_, x_, y_, z_, h_;
 
+            Play(List<string> plays) {
+                plays[0]
+            }
+
             void QueryPlayer () {
 
             }
@@ -116,9 +120,27 @@ namespace ReadFromExcelFIle
             List<List<float>> arrowSteps;
         }
 
-        class PlaySheet {
 
+
+        class PlaySheet {
+            List<Play> Plays;
+            string filename;
+
+            PlaySheet(string filename) {
+                this.filename = filename;
+            }
+
+
+            // May want to change passing a filename or saving it in a constructor
+            void ParsePlays(string fileName) {
+
+            }
+
+            void ParsePlays() {
+                ParsePlays(filename);
+            }
         }
+
 
 
     }
