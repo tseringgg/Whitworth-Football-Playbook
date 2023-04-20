@@ -1,6 +1,7 @@
 ﻿using System;
 using IronXL;
 using System.IO;
+using System.Text.Json;
 using System.Collections.Generic;
 
 namespace ReadFromExcelFIle
@@ -8,6 +9,21 @@ namespace ReadFromExcelFIle
 
     class Program
     {
+
+        static void ReadJson()
+        {
+            string text = File.ReadAllText(@"../db.json");
+            var play = JsonSerializer.Deserialize<Play>(text);
+
+            Console.WriteLine($"Full_Play: {play.Full_Play}");
+
+            //Console.WriteLine($"QB_pos: {play.qb}");
+            //Console.WriteLine($"H_pos: {play.h}");
+            //Console.WriteLine($"X_pos: {play.x}");
+            //Console.WriteLine($"Y_pos: {play.y}");
+            //Console.WriteLine($"Z_pos: {play.z}");
+        }
+
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
@@ -89,16 +105,37 @@ namespace ReadFromExcelFIle
                 }
                 Console.WriteLine();
             }
+
+            Program.ReadJson();
             
         }
 
 
         class Play {
             // "side" = left/right, "strength" = strong/weak
-            string qb, formation, side, h, strength, passProtection, passDescription, x, y, z;
+            public string qb { get; set; }
+            public string h { get; set; }
+            public string x { get; set; }
+            public string y { get; set; }
+            public string z { get; set; }
+
+            public string Full_Play { get; set; }
+
+            //public string strength { get; set; }
+            //public string passProtection { get; set; }
+            //public string passDescription { get; set; }
+            //public string formation { get; set; }
+            //public string side { get; set; }
+
+            string formation, side, strength, passProtection, passDescription;
+            //string qb, h, x, y, z;
 
             // Name with underscore is the actual object for player coordinates
             Player qb_, rb_, x_, y_, z_, h_;
+
+            Play(List<string> plays) {
+                //plays[0]
+            }
 
             void QueryPlayer () {
 
@@ -116,9 +153,27 @@ namespace ReadFromExcelFIle
             List<List<float>> arrowSteps;
         }
 
-        class PlaySheet {
 
+
+        class PlaySheet {
+            List<Play> Plays;
+            string filename;
+
+            PlaySheet(string filename) {
+                this.filename = filename;
+            }
+
+
+            // May want to change passing a filename or saving it in a constructor
+            void ParsePlays(string fileName) {
+
+            }
+
+            void ParsePlays() {
+                ParsePlays(filename);
+            }
         }
+
 
 
     }

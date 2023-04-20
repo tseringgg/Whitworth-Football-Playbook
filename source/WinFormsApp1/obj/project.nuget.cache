@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "2Tn+9EBzTbjF0JSo0qN0P2QAPBcmJmwKQLOP28T7j+pYlxHLMyJFN0M/DAZOlWgaE0vrpnlJdlt4+SIbTpMSAQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\ajt44\\OneDrive\\Documents\\softwareEngineering\\seTests\\fullProj1\\whitworth-football\\source\\WinFormsApp1\\WinFormsWithAspose.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ajt44\\.nuget\\packages\\aspose.diagram\\23.3.0\\aspose.diagram.23.3.0.nupkg.sha512",
+    "C:\\Users\\ajt44\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
+    "C:\\Users\\ajt44\\.nuget\\packages\\microsoft.win32.systemevents\\4.7.0\\microsoft.win32.systemevents.4.7.0.nupkg.sha512",
+    "C:\\Users\\ajt44\\.nuget\\packages\\system.drawing.common\\4.7.0\\system.drawing.common.4.7.0.nupkg.sha512",
+    "C:\\Users\\ajt44\\.nuget\\packages\\system.text.encoding.codepages\\4.7.0\\system.text.encoding.codepages.4.7.0.nupkg.sha512"
+  ],
+  "logs": []
+}
