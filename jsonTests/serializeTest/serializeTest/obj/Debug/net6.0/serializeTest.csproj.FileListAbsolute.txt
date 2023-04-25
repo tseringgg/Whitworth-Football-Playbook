@@ -1,0 +1,17 @@
+C:\Users\ajt44\OneDrive\Documents\softwareEngineering\seTests\fullProj1\whitworth-football\jsonTests\serializeTest\serializeTest\obj\Debug\net6.0\serializeTest.csproj.AssemblyReference.cache
+C:\Users\ajt44\OneDrive\Documents\softwareEngineering\seTests\fullProj1\whitworth-football\jsonTests\serializeTest\serializeTest\obj\Debug\net6.0\serializeTest.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ajt44\OneDrive\Documents\softwareEngineering\seTests\fullProj1\whitworth-football\jsonTests\serializeTest\serializeTest\obj\Debug\net6.0\serializeTest.AssemblyInfoInputs.cache
+C:\Users\ajt44\OneDrive\Documents\softwareEngineering\seTests\fullProj1\whitworth-football\jsonTests\serializeTest\serializeTest\obj\Debug\net6.0\serializeTest.AssemblyInfo.cs
+C:\Users\ajt44\OneDrive\Documents\softwareEngineering\seTests\fullProj1\whitworth-football\jsonTests\serializeTest\serializeTest\obj\Debug\net6.0\serializeTest.csproj.CoreCompileInputs.cache
+C:\Users\ajt44\OneDrive\Documents\softwareEngineering\seTests\fullProj1\whitworth-football\jsonTests\serializeTest\serializeTest\bin\Debug\net6.0\serializeTest.exe
+C:\Users\ajt44\OneDrive\Documents\softwareEngineering\seTests\fullProj1\whitworth-football\jsonTests\serializeTest\serializeTest\bin\Debug\net6.0\serializeTest.deps.json
+C:\Users\ajt44\OneDrive\Documents\softwareEngineering\seTests\fullProj1\whitworth-football\jsonTests\serializeTest\serializeTest\bin\Debug\net6.0\serializeTest.runtimeconfig.json
+C:\Users\ajt44\OneDrive\Documents\softwareEngineering\seTests\fullProj1\whitworth-football\jsonTests\serializeTest\serializeTest\bin\Debug\net6.0\serializeTest.dll
+C:\Users\ajt44\OneDrive\Documents\softwareEngineering\seTests\fullProj1\whitworth-football\jsonTests\serializeTest\serializeTest\bin\Debug\net6.0\ref\serializeTest.dll
+C:\Users\ajt44\OneDrive\Documents\softwareEngineering\seTests\fullProj1\whitworth-football\jsonTests\serializeTest\serializeTest\bin\Debug\net6.0\serializeTest.pdb
+C:\Users\ajt44\OneDrive\Documents\softwareEngineering\seTests\fullProj1\whitworth-football\jsonTests\serializeTest\serializeTest\obj\Debug\net6.0\serializeTest.dll
+C:\Users\ajt44\OneDrive\Documents\softwareEngineering\seTests\fullProj1\whitworth-football\jsonTests\serializeTest\serializeTest\obj\Debug\net6.0\ref\serializeTest.dll
+C:\Users\ajt44\OneDrive\Documents\softwareEngineering\seTests\fullProj1\whitworth-football\jsonTests\serializeTest\serializeTest\obj\Debug\net6.0\serializeTest.pdb
+C:\Users\ajt44\OneDrive\Documents\softwareEngineering\seTests\fullProj1\whitworth-football\jsonTests\serializeTest\serializeTest\obj\Debug\net6.0\serializeTest.genruntimeconfig.cache
+C:\Users\ajt44\OneDrive\Documents\softwareEngineering\seTests\fullProj1\whitworth-football\jsonTests\serializeTest\serializeTest\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\ajt44\OneDrive\Documents\softwareEngineering\seTests\fullProj1\whitworth-football\jsonTests\serializeTest\serializeTest\obj\Debug\net6.0\serializeTest.csproj.CopyComplete

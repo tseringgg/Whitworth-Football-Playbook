@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ajt44\\OneDrive\\Documents\\softwareEngineering\\seTests\\fullProj1\\whitworth-football\\ReadFromExcelFIle\\ReadFromExcelFIle\\ReadFromExcelFIle.csproj": {}
+    "C:\\Users\\ajt44\\OneDrive\\Documents\\softwareEngineering\\seTests\\fullProj1\\whitworth-football\\jsonTests\\serializeTest\\serializeTest\\serializeTest.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ajt44\\OneDrive\\Documents\\softwareEngineering\\seTests\\fullProj1\\whitworth-football\\ReadFromExcelFIle\\ReadFromExcelFIle\\ReadFromExcelFIle.csproj": {
+    "C:\\Users\\ajt44\\OneDrive\\Documents\\softwareEngineering\\seTests\\fullProj1\\whitworth-football\\jsonTests\\serializeTest\\serializeTest\\serializeTest.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ajt44\\OneDrive\\Documents\\softwareEngineering\\seTests\\fullProj1\\whitworth-football\\ReadFromExcelFIle\\ReadFromExcelFIle\\ReadFromExcelFIle.csproj",
-        "projectName": "ReadFromExcelFIle",
-        "projectPath": "C:\\Users\\ajt44\\OneDrive\\Documents\\softwareEngineering\\seTests\\fullProj1\\whitworth-football\\ReadFromExcelFIle\\ReadFromExcelFIle\\ReadFromExcelFIle.csproj",
+        "projectUniqueName": "C:\\Users\\ajt44\\OneDrive\\Documents\\softwareEngineering\\seTests\\fullProj1\\whitworth-football\\jsonTests\\serializeTest\\serializeTest\\serializeTest.csproj",
+        "projectName": "serializeTest",
+        "projectPath": "C:\\Users\\ajt44\\OneDrive\\Documents\\softwareEngineering\\seTests\\fullProj1\\whitworth-football\\jsonTests\\serializeTest\\serializeTest\\serializeTest.csproj",
         "packagesPath": "C:\\Users\\ajt44\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ajt44\\OneDrive\\Documents\\softwareEngineering\\seTests\\fullProj1\\whitworth-football\\ReadFromExcelFIle\\ReadFromExcelFIle\\obj\\",
+        "outputPath": "C:\\Users\\ajt44\\OneDrive\\Documents\\softwareEngineering\\seTests\\fullProj1\\whitworth-football\\jsonTests\\serializeTest\\serializeTest\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -22,15 +22,15 @@
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "netcoreapp3.1"
+          "net6.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "netcoreapp3.1": {
-            "targetAlias": "netcoreapp3.1",
+          "net6.0": {
+            "targetAlias": "net6.0",
             "projectReferences": {}
           }
         },
@@ -41,12 +41,12 @@
         }
       },
       "frameworks": {
-        "netcoreapp3.1": {
-          "targetAlias": "netcoreapp3.1",
+        "net6.0": {
+          "targetAlias": "net6.0",
           "dependencies": {
-            "IronXL.Excel": {
+            "Newtonsoft.Json": {
               "target": "Package",
-              "version": "[2023.4.13, )"
+              "version": "[13.0.3, )"
             }
           },
           "imports": [

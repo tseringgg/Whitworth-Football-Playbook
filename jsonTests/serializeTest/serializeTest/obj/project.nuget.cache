@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "bzilTrKlVLImJ91DLVFusB9WGDzPhVXhO95c/T1s967Yq/zeBrspQSB75QUY3mCT7OEt2tHGzWiTTrh3U7AXrA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\ajt44\\OneDrive\\Documents\\softwareEngineering\\seTests\\fullProj1\\whitworth-football\\jsonTests\\serializeTest\\serializeTest\\serializeTest.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ajt44\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
