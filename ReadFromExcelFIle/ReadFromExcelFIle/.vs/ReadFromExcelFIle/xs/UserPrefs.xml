@@ -1,8 +1,9 @@
-﻿<Properties StartupConfiguration="{DEC34B73-4B46-45AD-BFCB-4E072D527A26}|Default">
+﻿<Properties StartupConfiguration="{FF8A1D0A-24B2-4300-9552-E3713EB53002}|Default">
   <MonoDevelop.Ide.ItemProperties.ReadFromExcelFIle PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="ReadFromExcelFIle/Program.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Program.cs">
     <Files>
-      <File FileName="ReadFromExcelFIle/Program.cs" Line="14" Column="10" />
+      <File FileName="Program.cs" Line="153" Column="43" />
+      <File FileName="db.json" Line="34" Column="12" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">

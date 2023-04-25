@@ -3,26 +3,28 @@ using IronXL;
 using System.IO;
 using System.Text.Json;
 using System.Collections.Generic;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 
 namespace ReadFromExcelFIle
 {
 
     class Program
-    {
+    { 
 
-        static void ReadJson()
-        {
-            string text = File.ReadAllText(@"../db.json");
-            var play = JsonSerializer.Deserialize<Play>(text);
+        //static void ReadJson()
+        //{
+        //    string text = File.ReadAllText(@"./db.json");
+        //    var play = JsonSerializer.Deserialize<Play>(text);
 
-            Console.WriteLine($"Full_Play: {play.Full_Play}");
+        //    Console.WriteLine($"Full_Play: {play.Full_Play}");
 
-            //Console.WriteLine($"QB_pos: {play.qb}");
-            //Console.WriteLine($"H_pos: {play.h}");
-            //Console.WriteLine($"X_pos: {play.x}");
-            //Console.WriteLine($"Y_pos: {play.y}");
-            //Console.WriteLine($"Z_pos: {play.z}");
-        }
+        //    //Console.WriteLine($"QB_pos: {play.qb}");
+        //    //Console.WriteLine($"H_pos: {play.h}");
+        //    //Console.WriteLine($"X_pos: {play.x}");
+        //    //Console.WriteLine($"Y_pos: {play.y}");
+        //    //Console.WriteLine($"Z_pos: {play.z}");
+        //}
 
         static void Main(string[] args)
         {
@@ -106,20 +108,68 @@ namespace ReadFromExcelFIle
                 Console.WriteLine();
             }
 
-            Program.ReadJson();
-            
+
+            string _sampleJsonFilePath = "../../../db.json";
+
+            // Read and Parse a JSON File Using JsonTextReader in Newtonsoft.Json
+            var serializer = new Newtonsoft.Json.JsonSerializer();
+            //List<List<Play>> play = new List<List<Play>>();
+            List<ResponseData> play = new List<ResponseData>();
+            using (var streamReader = new StreamReader(_sampleJsonFilePath))
+            using (var textReader = new JsonTextReader(streamReader))
+            {
+                // "play" is a list of the data from JSON
+                play = serializer.Deserialize<List<ResponseData>>(textReader);
+            }
+
+            Console.WriteLine(play);
+
         }
 
+        //public class ReadAndParseJsonFileWithNewtonsoftJson
+        //{
+        //    private readonly string _sampleJsonFilePath;
+        //    public ReadAndParseJsonFileWithNewtonsoftJson(string sampleJsonFilePath)
+        //    {
+        //        _sampleJsonFilePath = sampleJsonFilePath;
+        //    }
+        //}
+
+        //public List<Play> UseUserDefinedObjectWithNewtonsoftJson()
+        //{
+        //    using StreamReader reader = new(_sampleJsonFilePath);
+        //    var json = reader.ReadToEnd();
+        //    List<Teacher> teachers = JsonConvert.DeserializeObject<List<Teacher>>(json);
+        //    return teachers;
+        //}
+
+        class ResponseData {
+            public Play Full_Play { get; set; }
+
+            public Play Formation { get; set; }
+            public Play Concept { get; set; }
+            public Play Motion { get; set; }
+            public Play Protection { get; set; }
+            public Play Tags { get; set; }
+            public Play Routes { get; set; }
+        }
 
         class Play {
             // "side" = left/right, "strength" = strong/weak
-            public string qb { get; set; }
-            public string h { get; set; }
-            public string x { get; set; }
-            public string y { get; set; }
-            public string z { get; set; }
+            //public string qb { get; set; }
+            //public string h { get; set; }
+            //public string x { get; set; }
+            //public string y { get; set; }
+            //public string z { get; set; }
 
-            public string Full_Play { get; set; }
+            //public string Formation { get; set; }
+            //public string Concept { get; set; }
+            //public string Motion { get; set; }
+            //public string Protection { get; set; }
+            //public string Tags { get; set; }
+            //public string Routes { get; set; }
+
+
 
             //public string strength { get; set; }
             //public string passProtection { get; set; }
@@ -127,8 +177,8 @@ namespace ReadFromExcelFIle
             //public string formation { get; set; }
             //public string side { get; set; }
 
-            string formation, side, strength, passProtection, passDescription;
-            //string qb, h, x, y, z;
+            //string formation, side, strength, passProtection, passDescription;
+            string qb, h, x, y, z;
 
             // Name with underscore is the actual object for player coordinates
             Player qb_, rb_, x_, y_, z_, h_;
