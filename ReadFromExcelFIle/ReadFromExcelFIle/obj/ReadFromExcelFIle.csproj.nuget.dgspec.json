@@ -41,6 +41,10 @@
             "IronXL.Excel": {
               "target": "Package",
               "version": "[2023.4.13, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
             }
           },
           "imports": [

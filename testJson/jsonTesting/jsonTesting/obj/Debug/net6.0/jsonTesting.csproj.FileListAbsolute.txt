@@ -1,0 +1,17 @@
+C:\Users\ajt44\OneDrive\Documents\softwareEngineering\seTests\fullProj1\whitworth-football\testJson\jsonTesting\jsonTesting\bin\Debug\net6.0\jsonTesting.exe
+C:\Users\ajt44\OneDrive\Documents\softwareEngineering\seTests\fullProj1\whitworth-football\testJson\jsonTesting\jsonTesting\bin\Debug\net6.0\jsonTesting.deps.json
+C:\Users\ajt44\OneDrive\Documents\softwareEngineering\seTests\fullProj1\whitworth-football\testJson\jsonTesting\jsonTesting\bin\Debug\net6.0\jsonTesting.runtimeconfig.json
+C:\Users\ajt44\OneDrive\Documents\softwareEngineering\seTests\fullProj1\whitworth-football\testJson\jsonTesting\jsonTesting\bin\Debug\net6.0\jsonTesting.dll
+C:\Users\ajt44\OneDrive\Documents\softwareEngineering\seTests\fullProj1\whitworth-football\testJson\jsonTesting\jsonTesting\bin\Debug\net6.0\ref\jsonTesting.dll
+C:\Users\ajt44\OneDrive\Documents\softwareEngineering\seTests\fullProj1\whitworth-football\testJson\jsonTesting\jsonTesting\bin\Debug\net6.0\jsonTesting.pdb
+C:\Users\ajt44\OneDrive\Documents\softwareEngineering\seTests\fullProj1\whitworth-football\testJson\jsonTesting\jsonTesting\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\ajt44\OneDrive\Documents\softwareEngineering\seTests\fullProj1\whitworth-football\testJson\jsonTesting\jsonTesting\obj\Debug\net6.0\jsonTesting.csproj.AssemblyReference.cache
+C:\Users\ajt44\OneDrive\Documents\softwareEngineering\seTests\fullProj1\whitworth-football\testJson\jsonTesting\jsonTesting\obj\Debug\net6.0\jsonTesting.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ajt44\OneDrive\Documents\softwareEngineering\seTests\fullProj1\whitworth-football\testJson\jsonTesting\jsonTesting\obj\Debug\net6.0\jsonTesting.AssemblyInfoInputs.cache
+C:\Users\ajt44\OneDrive\Documents\softwareEngineering\seTests\fullProj1\whitworth-football\testJson\jsonTesting\jsonTesting\obj\Debug\net6.0\jsonTesting.AssemblyInfo.cs
+C:\Users\ajt44\OneDrive\Documents\softwareEngineering\seTests\fullProj1\whitworth-football\testJson\jsonTesting\jsonTesting\obj\Debug\net6.0\jsonTesting.csproj.CoreCompileInputs.cache
+C:\Users\ajt44\OneDrive\Documents\softwareEngineering\seTests\fullProj1\whitworth-football\testJson\jsonTesting\jsonTesting\obj\Debug\net6.0\jsonTesting.csproj.CopyComplete
+C:\Users\ajt44\OneDrive\Documents\softwareEngineering\seTests\fullProj1\whitworth-football\testJson\jsonTesting\jsonTesting\obj\Debug\net6.0\jsonTesting.dll
+C:\Users\ajt44\OneDrive\Documents\softwareEngineering\seTests\fullProj1\whitworth-football\testJson\jsonTesting\jsonTesting\obj\Debug\net6.0\ref\jsonTesting.dll
+C:\Users\ajt44\OneDrive\Documents\softwareEngineering\seTests\fullProj1\whitworth-football\testJson\jsonTesting\jsonTesting\obj\Debug\net6.0\jsonTesting.pdb
+C:\Users\ajt44\OneDrive\Documents\softwareEngineering\seTests\fullProj1\whitworth-football\testJson\jsonTesting\jsonTesting\obj\Debug\net6.0\jsonTesting.genruntimeconfig.cache

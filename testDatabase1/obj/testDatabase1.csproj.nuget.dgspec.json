@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ajt44\\OneDrive\\Documents\\softwareEngineering\\seTests\\testDatabase1\\testDatabase1\\testDatabase1.csproj": {}
+    "C:\\Users\\ajt44\\OneDrive\\Documents\\softwareEngineering\\seTests\\fullProj1\\whitworth-football\\testDatabase1\\testDatabase1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ajt44\\OneDrive\\Documents\\softwareEngineering\\seTests\\testDatabase1\\testDatabase1\\testDatabase1.csproj": {
+    "C:\\Users\\ajt44\\OneDrive\\Documents\\softwareEngineering\\seTests\\fullProj1\\whitworth-football\\testDatabase1\\testDatabase1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ajt44\\OneDrive\\Documents\\softwareEngineering\\seTests\\testDatabase1\\testDatabase1\\testDatabase1.csproj",
+        "projectUniqueName": "C:\\Users\\ajt44\\OneDrive\\Documents\\softwareEngineering\\seTests\\fullProj1\\whitworth-football\\testDatabase1\\testDatabase1.csproj",
         "projectName": "testDatabase1",
-        "projectPath": "C:\\Users\\ajt44\\OneDrive\\Documents\\softwareEngineering\\seTests\\testDatabase1\\testDatabase1\\testDatabase1.csproj",
+        "projectPath": "C:\\Users\\ajt44\\OneDrive\\Documents\\softwareEngineering\\seTests\\fullProj1\\whitworth-football\\testDatabase1\\testDatabase1.csproj",
         "packagesPath": "C:\\Users\\ajt44\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ajt44\\OneDrive\\Documents\\softwareEngineering\\seTests\\testDatabase1\\testDatabase1\\obj\\",
+        "outputPath": "C:\\Users\\ajt44\\OneDrive\\Documents\\softwareEngineering\\seTests\\fullProj1\\whitworth-football\\testDatabase1\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

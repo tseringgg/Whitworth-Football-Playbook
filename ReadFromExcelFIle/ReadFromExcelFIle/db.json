@@ -1,46 +1,126 @@
 ﻿{
-    "Full_Play": {
-        "Formation": {
-            "x_x": "1",
-            "x_y": "",
-            "h_x": "1",
-            "h_y": "",
-            "t_x": "1",
-            "t_y": "",
-            "q_x": "1",
-            "q_y": "",
-            "y_x": "1",
-            "y_y": "",
-            "z_x": "1",
-            "z_y": ""
+  "Full_Play": {
+    "Formation": {
+      "Routes": {
+        "Slant": {
+          "1": 1,
+          "2": 2
+        }
+      }
+    },
+    "Full_Play_2": {
+      "Formation": {
+        "x_x": "1",
+        "x_y": "",
+        "h_x": "1",
+        "h_y": "",
+        "t_x": "1",
+        "t_y": "",
+        "q_x": "1",
+        "q_y": "",
+        "y_x": "1",
+        "y_y": "",
+        "z_x": "1",
+        "z_y": ""
+      },
+      "Concept": {
+        "x": "1",
+        "y": "1",
+        "h": "1",
+        "t": "1",
+        "z": "1"
+      },
+      "Motion": {
+        "No": "1"
+      },
+      "Protection": {
+        "No": "1"
+      },
+      "Tags": {
+        "Receiver": "1",
+        "Route": "1"
+      },
+      "Routes": {
+        "Route": {},
+        "Steps": {}
+      },
+      "Formations": {
+        "Duo": {
+          "x_x": "1",
+          "x_y": "",
+          "h_x": "1",
+          "h_y": "",
+          "t_x": "1",
+          "t_y": "",
+          "q_x": "1",
+          "q_y": "",
+          "y_x": "1",
+          "y_y": "",
+          "z_x": "1",
+          "z_y": ""
         },
         "Concept": {
-            "x": "1",
-            "y": "1",
-            "h": "1",
-            "t": "1",
-            "z": "1"
+          "x": "1",
+          "y": "1",
+          "h": "1",
+          "t": "1",
+          "z": "1"
         },
         "Motion": {
-            "No": "1"
+          "No": "1"
         },
         "Protection": {
-            "No": "1"
+          "No": "1"
         },
         "Tags": {
-            "Receiver": "1",
-            "Route": "1"
+          "Receiver": "1",
+          "Route": "1"
         },
         "Routes": {
-            "Route": {},
-            "Steps": {
-                [
-
-                ]
-            }
+          "Route": {}
+        },
+        "Dual": {
+          "x_x": "1",
+          "x_y": "",
+          "h_x": "1",
+          "h_y": "",
+          "t_x": "1",
+          "t_y": "",
+          "q_x": "1",
+          "q_y": "",
+          "y_x": "1",
+          "y_y": "",
+          "z_x": "1",
+          "z_y": ""
+        },
+        "Double": {
+          "x_x": "1",
+          "x_y": "",
+          "h_x": "1",
+          "h_y": "",
+          "t_x": "1",
+          "t_y": "",
+          "q_x": "1",
+          "q_y": "",
+          "y_x": "1",
+          "y_y": "",
+          "z_x": "1",
+          "z_y": ""
         }
+      },
 
-
-
+      "Full Plays": {
+        "duet lt str space z stick": {
+          "Formation": "duet lt str",
+          "Concept": "space",
+          "Motion": "None",
+          "Protection": "None",
+          "Tags": {
+            "Receiver": "Z",
+            "Route": "Stick"
+          }
+        }
+      }
     }
+  }
 }
