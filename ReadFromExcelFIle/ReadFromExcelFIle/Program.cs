@@ -96,8 +96,6 @@ namespace ReadFromExcelFIle
                 // TODO: Try to add empty lists to "plays" so I can add "Split Single Play" to them
                 plays.Add(temp); // Adds an empty list to plays to get ready to add TempVect Elements in that spot
 
-
-
             }
 
 
@@ -118,7 +116,7 @@ namespace ReadFromExcelFIle
             {
                 for (int i = 0; i < plays_data.Count; i++)
                 {
-                    System.Diagnostics.Debug.Print(plays_data[i].Full_Play);
+                    System.Diagnostics.Debug.Print(plays_data[i].Table[0].name);
                 }
 
 
@@ -126,7 +124,7 @@ namespace ReadFromExcelFIle
 
             static List<Play> JSONresponse()
             {
-                string JSONFileName = "../../../test.json";
+                string JSONFileName = "../../../file.json";
                 if (File.Exists(JSONFileName))
                 {
                     var plays = JsonConvert.DeserializeObject<List<Play>>
