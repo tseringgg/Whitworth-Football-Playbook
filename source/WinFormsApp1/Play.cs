@@ -1,37 +1,28 @@
-﻿namespace WinFormsWithAspose
+﻿using Aspose.Diagram;
+
+namespace WinFormsWithAspose
 {
-    internal class Play : IDiagramGroup
+    public class Play
     {
-        ITextBubbleGroup tbg;
-        ILineGroup lg;
-        private double X, Y;
-        public Play(ITextBubbleGroup tbg, ILineGroup lg)
+        public List<IDiagramGroup> Groups;
+        public double X, Y;
+        public double Scale { get; set; }
+        public Play(List<IDiagramGroup> groups)
         {
-            this.tbg = tbg;
-            this.lg = lg;
             this.X = 0;
             this.Y = 0;
+            Scale = 1;
+            this.Groups = groups;
         }
-
-        public IDiagramGroup SetCenter(double x, double y)
+        public void Draw(Page page)
         {
-            this.X = x;
-            this.Y = y;
-            tbg.SetCenter(x, y);
-            //lg.SetCenter(x, y);
-            return this;
-        }
-        public ITextBubbleGroup GetTextBubbleGroup() {  return this.tbg; }
-        public ILineGroup GetLineGroup() { return this.lg; }
-
-        public double GetX()
-        {
-            return this.X;
-        }
-
-        public double GetY()
-        {
-            return this.Y;
+            foreach (IDiagramGroup group in Groups)
+            {
+                group.Scale = Scale;
+                group.X = X;
+                group.Y = Y;
+                group.Draw(page);
+            }
         }
     }
 }
