@@ -1,138 +1,126 @@
 ﻿{
-<<<<<<< HEAD
   "Full_Play": {
     "Formation": {
-=======
-<<<<<<< HEAD:db.json
-  "Routes": {
-    "Slant": {
-      "1": 1,
-      "2": 2
+      "Routes": {
+        "Slant": {
+          "1": 1,
+          "2": 2
+        }
+      }
     },
-  },
-=======
-    "Full_Play": {
-        "Formation": {
-            "x_x": "1",
-            "x_y": "",
-            "h_x": "1",
-            "h_y": "",
-            "t_x": "1",
-            "t_y": "",
-            "q_x": "1",
-            "q_y": "",
-            "y_x": "1",
-            "y_y": "",
-            "z_x": "1",
-            "z_y": ""
+    "Full_Play_2": {
+      "Formation": {
+        "x_x": "1",
+        "x_y": "",
+        "h_x": "1",
+        "h_y": "",
+        "t_x": "1",
+        "t_y": "",
+        "q_x": "1",
+        "q_y": "",
+        "y_x": "1",
+        "y_y": "",
+        "z_x": "1",
+        "z_y": ""
+      },
+      "Concept": {
+        "x": "1",
+        "y": "1",
+        "h": "1",
+        "t": "1",
+        "z": "1"
+      },
+      "Motion": {
+        "No": "1"
+      },
+      "Protection": {
+        "No": "1"
+      },
+      "Tags": {
+        "Receiver": "1",
+        "Route": "1"
+      },
+      "Routes": {
+        "Route": {},
+        "Steps": {}
+      },
+      "Formations": {
+        "Duo": {
+          "x_x": "1",
+          "x_y": "",
+          "h_x": "1",
+          "h_y": "",
+          "t_x": "1",
+          "t_y": "",
+          "q_x": "1",
+          "q_y": "",
+          "y_x": "1",
+          "y_y": "",
+          "z_x": "1",
+          "z_y": ""
         },
         "Concept": {
-            "x": "1",
-            "y": "1",
-            "h": "1",
-            "t": "1",
-            "z": "1"
+          "x": "1",
+          "y": "1",
+          "h": "1",
+          "t": "1",
+          "z": "1"
         },
         "Motion": {
-            "No": "1"
+          "No": "1"
         },
         "Protection": {
-            "No": "1"
+          "No": "1"
         },
         "Tags": {
-            "Receiver": "1",
-            "Route": "1"
+          "Receiver": "1",
+          "Route": "1"
         },
         "Routes": {
-            "Route": {},
-            "Steps": {
-                [
-
-                ]
-            }
+          "Route": {}
+        },
+        "Dual": {
+          "x_x": "1",
+          "x_y": "",
+          "h_x": "1",
+          "h_y": "",
+          "t_x": "1",
+          "t_y": "",
+          "q_x": "1",
+          "q_y": "",
+          "y_x": "1",
+          "y_y": "",
+          "z_x": "1",
+          "z_y": ""
+        },
+        "Double": {
+          "x_x": "1",
+          "x_y": "",
+          "h_x": "1",
+          "h_y": "",
+          "t_x": "1",
+          "t_y": "",
+          "q_x": "1",
+          "q_y": "",
+          "y_x": "1",
+          "y_y": "",
+          "z_x": "1",
+          "z_y": ""
         }
+      },
 
->>>>>>> f14110f92aecbd1c18d8338a4ac73af3cf296ab2:ReadFromExcelFIle/ReadFromExcelFIle/db.json
-
-  "Formations": {
-    "Duo": {
->>>>>>> a1c54b370a9452e01093a2288926d7f57f96e26d
-      "x_x": "1",
-      "x_y": "",
-      "h_x": "1",
-      "h_y": "",
-      "t_x": "1",
-      "t_y": "",
-      "q_x": "1",
-      "q_y": "",
-      "y_x": "1",
-      "y_y": "",
-      "z_x": "1",
-      "z_y": ""
-    },
-<<<<<<< HEAD
-    "Concept": {
-      "x": "1",
-      "y": "1",
-      "h": "1",
-      "t": "1",
-      "z": "1"
-    },
-    "Motion": {
-      "No": "1"
-    },
-    "Protection": {
-      "No": "1"
-    },
-    "Tags": {
-      "Receiver": "1",
-      "Route": "1"
-    },
-    "Routes": {
-      "Route": {}
-    }
-=======
-    "Dual": {
-      "x_x": "1",
-      "x_y": "",
-      "h_x": "1",
-      "h_y": "",
-      "t_x": "1",
-      "t_y": "",
-      "q_x": "1",
-      "q_y": "",
-      "y_x": "1",
-      "y_y": "",
-      "z_x": "1",
-      "z_y": ""
-    },
-    "Double": {
-      "x_x": "1",
-      "x_y": "",
-      "h_x": "1",
-      "h_y": "",
-      "t_x": "1",
-      "t_y": "",
-      "q_x": "1",
-      "q_y": "",
-      "y_x": "1",
-      "y_y": "",
-      "z_x": "1",
-      "z_y": ""
-    }
-  },
-
-  "Full Plays": {
-    "duet lt str space z stick": {
-      "Formation": "duet lt str",
-      "Concept": "space",
-      "Motion": "None",
-      "Protection": "None",
-      "Tags": {
-        "Receiver": "Z",
-        "Route": "Stick"
+      "Full Plays": {
+        "duet lt str space z stick": {
+          "Formation": "duet lt str",
+          "Concept": "space",
+          "Motion": "None",
+          "Protection": "None",
+          "Tags": {
+            "Receiver": "Z",
+            "Route": "Stick"
+          }
+        }
       }
     }
->>>>>>> a1c54b370a9452e01093a2288926d7f57f96e26d
   }
 }

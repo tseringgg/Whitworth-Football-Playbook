@@ -1,25 +1,31 @@
 ﻿<Properties StartupConfiguration="{DEC34B73-4B46-45AD-BFCB-4E072D527A26}|Default">
   <MonoDevelop.Ide.ItemProperties.ReadFromExcelFIle PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="ReadFromExcelFIle/Program.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="ReadFromExcelFIle/test.json">
     <Files>
-      <File FileName="ReadFromExcelFIle/Program.cs" Line="14" Column="10" />
+      <File FileName="ReadFromExcelFIle/db.json" Line="2" Column="13" />
+      <File FileName="ReadFromExcelFIle/db (copy).json" Line="3" Column="4" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="ReadFromExcelFIle" expanded="True">
             <Node name="ReadFromExcelFIle" expanded="True">
-              <Node name="Program.cs" selected="True" />
+              <Node name="test.json" selected="True" />
             </Node>
           </Node>
         </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/Users/michaelsmith/Desktop/Whitworth_Stuff/Spring 2023/CS 472/whitworth-football/ReadFromExcelFIle/ReadFromExcelFIle/Program.cs" relfile="ReadFromExcelFIle/Program.cs" line="132" column="1" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
 </Properties>

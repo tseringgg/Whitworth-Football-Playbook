@@ -1,14 +1,9 @@
 {
   "version": 2,
-<<<<<<< HEAD
   "dgSpecHash": "+PKkPr46OkNyENXf/PAEfKy8wBQj3wPQqJogYDOPn9UZQczaRpjURStXJf/lYvMww/R6xfQ+MJiqlPBjC5+Q4A==",
-=======
-  "dgSpecHash": "PvKRERL1S3DYehMGKln9touFOt49sHimX/J0ZvN97SrPV276orkMuD+Bh1D8JzVbqJBmvcE7REi/io7Eu3dvIQ==",
->>>>>>> a1c54b370a9452e01093a2288926d7f57f96e26d
   "success": true,
-  "projectFilePath": "C:\\Users\\ajt44\\OneDrive\\Documents\\softwareEngineering\\seTests\\fullProj1\\whitworth-football\\ReadFromExcelFIle\\ReadFromExcelFIle\\ReadFromExcelFIle.csproj",
+  "projectFilePath": "/Users/michaelsmith/Desktop/Whitworth_Stuff/Spring 2023/CS 472/whitworth-football/ReadFromExcelFIle/ReadFromExcelFIle/ReadFromExcelFIle.csproj",
   "expectedPackageFiles": [
-<<<<<<< HEAD
     "/Users/michaelsmith/.nuget/packages/bitmiracle.libtiff.net/2.4.649/bitmiracle.libtiff.net.2.4.649.nupkg.sha512",
     "/Users/michaelsmith/.nuget/packages/ironsoftware.system.drawing/2023.3.3/ironsoftware.system.drawing.2023.3.3.nupkg.sha512",
     "/Users/michaelsmith/.nuget/packages/ironxl.excel/2023.4.13/ironxl.excel.2023.4.13.nupkg.sha512",
@@ -17,15 +12,13 @@
     "/Users/michaelsmith/.nuget/packages/sixlabors.imagesharp/2.1.3/sixlabors.imagesharp.2.1.3.nupkg.sha512",
     "/Users/michaelsmith/.nuget/packages/system.runtime.compilerservices.unsafe/5.0.0/system.runtime.compilerservices.unsafe.5.0.0.nupkg.sha512",
     "/Users/michaelsmith/.nuget/packages/system.text.encoding.codepages/5.0.0/system.text.encoding.codepages.5.0.0.nupkg.sha512"
-=======
-    "C:\\Users\\ajt44\\.nuget\\packages\\bitmiracle.libtiff.net\\2.4.649\\bitmiracle.libtiff.net.2.4.649.nupkg.sha512",
-    "C:\\Users\\ajt44\\.nuget\\packages\\ironsoftware.system.drawing\\2023.3.3\\ironsoftware.system.drawing.2023.3.3.nupkg.sha512",
-    "C:\\Users\\ajt44\\.nuget\\packages\\ironxl.excel\\2023.4.13\\ironxl.excel.2023.4.13.nupkg.sha512",
-    "C:\\Users\\ajt44\\.nuget\\packages\\microsoft.netcore.platforms\\5.0.0\\microsoft.netcore.platforms.5.0.0.nupkg.sha512",
-    "C:\\Users\\ajt44\\.nuget\\packages\\sixlabors.imagesharp\\2.1.3\\sixlabors.imagesharp.2.1.3.nupkg.sha512",
-    "C:\\Users\\ajt44\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\5.0.0\\system.runtime.compilerservices.unsafe.5.0.0.nupkg.sha512",
-    "C:\\Users\\ajt44\\.nuget\\packages\\system.text.encoding.codepages\\5.0.0\\system.text.encoding.codepages.5.0.0.nupkg.sha512"
->>>>>>> a1c54b370a9452e01093a2288926d7f57f96e26d
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file /Users/michaelsmith/Desktop/Whitworth_Stuff/Spring 2023/CS 472/whitworth-football/ReadFromExcelFIle/ReadFromExcelFIle/obj/project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }
