@@ -34,6 +34,14 @@ namespace jsonTest
 
     }
 
+    class formation
+    {
+        public string name;
+        public double x_x;
+        public double x_y;
+        public double 
+    }
+
     [Serializable]
     class DataTable<Type>{
         public DataTable(){}
