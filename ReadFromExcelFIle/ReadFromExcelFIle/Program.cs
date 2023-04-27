@@ -3,6 +3,10 @@ using IronXL;
 using System.IO;
 using System.Text.Json;
 using System.Collections.Generic;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Serialization;
+using Newtonsoft.Json.Converters;
+using Newtonsoft.Json.Linq;
 
 namespace ReadFromExcelFIle
 {
@@ -10,19 +14,19 @@ namespace ReadFromExcelFIle
     class Program
     {
 
-        static void ReadJson()
-        {
-            string text = File.ReadAllText(@"../db.json");
-            var play = JsonSerializer.Deserialize<Play>(text);
+        //static void ReadJson()
+        //{
+        //    string text = File.ReadAllText(@"./db.json");
+        //    var play = JsonSerializer.Deserialize<Play>(text);
 
-            Console.WriteLine($"Full_Play: {play.Full_Play}");
+        //    Console.WriteLine($"Full_Play: {play.Full_Play}");
 
-            //Console.WriteLine($"QB_pos: {play.qb}");
-            //Console.WriteLine($"H_pos: {play.h}");
-            //Console.WriteLine($"X_pos: {play.x}");
-            //Console.WriteLine($"Y_pos: {play.y}");
-            //Console.WriteLine($"Z_pos: {play.z}");
-        }
+        //    //Console.WriteLine($"QB_pos: {play.qb}");
+        //    //Console.WriteLine($"H_pos: {play.h}");
+        //    //Console.WriteLine($"X_pos: {play.x}");
+        //    //Console.WriteLine($"Y_pos: {play.y}");
+        //    //Console.WriteLine($"Z_pos: {play.z}");
+        //}
 
         static void Main(string[] args)
         {
@@ -70,16 +74,17 @@ namespace ReadFromExcelFIle
 
             //Console.WriteLine(myRange.ToString());
 
-            string[] rows = myRange.ToString().Split(new char[] {'\n'});
+            string[] rows = myRange.ToString().Split(new char[] { '\n' });
 
             List<List<string>> plays = new List<List<string>>();
             List<string> singlePlay = new List<string>();
-            
+
 
             string[] splitSinglePlay;
 
-            for (int i = 0; i < rows.Length; i++) {
-        
+            for (int i = 0; i < rows.Length; i++)
+            {
+
                 singlePlay.Add(rows[i]);
                 splitSinglePlay = singlePlay[i].Split(' ', '\t', '\r');
                 List<string> temp = new List<string>();
@@ -91,8 +96,8 @@ namespace ReadFromExcelFIle
                 // TODO: Try to add empty lists to "plays" so I can add "Split Single Play" to them
                 plays.Add(temp); // Adds an empty list to plays to get ready to add TempVect Elements in that spot
 
-                
-   
+
+
             }
 
 
@@ -106,36 +111,46 @@ namespace ReadFromExcelFIle
                 Console.WriteLine();
             }
 
-            Program.ReadJson();
-            
+
+            // Store Deserialized object from JSON - https://www.youtube.com/watch?v=cGKA8wRCA0A
+            var plays_data = JSONresponse();
+            if (plays_data != null)
+            {
+                for (int i = 0; i < plays_data.Count; i++)
+                {
+                    System.Diagnostics.Debug.Print(plays_data[i].Full_Play);
+                }
+
+
+            }
+
+            static List<Play> JSONresponse()
+            {
+                string JSONFileName = "../../../test.json";
+                if (File.Exists(JSONFileName))
+                {
+                    var plays = JsonConvert.DeserializeObject<List<Play>>
+                                (File.ReadAllText(JSONFileName));
+
+                    return plays;
+                }
+
+                return null;
+            }
         }
 
-
-        class Play {
+        class Play_1 {
             // "side" = left/right, "strength" = strong/weak
-            public string qb { get; set; }
-            public string h { get; set; }
-            public string x { get; set; }
-            public string y { get; set; }
-            public string z { get; set; }
 
-            public string Full_Play { get; set; }
-
-            //public string strength { get; set; }
-            //public string passProtection { get; set; }
-            //public string passDescription { get; set; }
-            //public string formation { get; set; }
-            //public string side { get; set; }
-
-            string formation, side, strength, passProtection, passDescription;
-            //string qb, h, x, y, z;
+            //string formation, side, strength, passProtection, passDescription;
+            string qb, h, x, y, z;
 
             // Name with underscore is the actual object for player coordinates
             Player qb_, rb_, x_, y_, z_, h_;
 
-            Play(List<string> plays) {
-                //plays[0]
-            }
+            //Play(List<string> plays) {
+            //    //plays[0]
+            //}
 
             void QueryPlayer () {
 
