@@ -2,7 +2,7 @@
 
 namespace WinFormsApp1
 {
-    internal class RouteGroup : ILineGroup
+    internal class RouteGroup
     {
         public RouteGroup()
         {

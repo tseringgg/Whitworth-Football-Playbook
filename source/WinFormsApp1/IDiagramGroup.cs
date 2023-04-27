@@ -1,9 +1,13 @@
-﻿namespace WinFormsWithAspose
+﻿using Aspose.Diagram;
+
+namespace WinFormsWithAspose
 {
     public interface IDiagramGroup
     {
-        public IDiagramGroup SetCenter(double x, double y);
-        public double GetX();
-        public double GetY();
+        public List<IDrawable> drawables { get; set; }
+        public double X { get; set; }
+        public double Y { get; set; }
+        public double Scale { get; set; }
+        public void Draw(Page page);
     }
 }

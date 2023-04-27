@@ -20,45 +20,32 @@ namespace WinFormsApp1
 
 
             List <Play> plays = new List<Play>();
+            for(int i = 0; i < 8; i++)
+            {
+                AddSamplePlay(plays);
+            }
 
-            plays.Add((Play)new Play(new SkillPlayerGroup(0.4, 0.3)
-                    .Add("X", 7.25, 4.25)
-                    .Add("Y", 3, 3.9)
-                    .Add("Z", 1.25, 4.25)
-                    .Add("Q", 4.25, 3.25)
-                    .Add("T", 3.75, 3)
-                    .Add("H", 6.3, 3.9),
-                    new RouteGroup()).SetCenter(4.25, 4.25));
+            EightPlayDrawer pd = new EightPlayDrawer(firstPage, plays);
+            pd.Draw();
 
-            plays.ForEach(play => firstPage
-                //.DrawCenterFormation(4.25, 4.25, 0.4, 0.3, 0.5)
-                .DrawTextBubbles(play.GetTextBubbleGroup())
-                //.DrawRouteGroup(play.GetRouteGroup())
-            );
-
-            // get play from excel
-            // loop through keywords
-            //      get data from json with keyword
-            //      return skillplayergroup object
-            // draw
-
-            ExportDiagram(dataDir, diagram);
+            diagram.ExportDiagram(dataDir);
 
             //ApplicationConfiguration.Initialize();
             //Application.Run(new Form1());
         }
-
-
-        public static void ExportDiagram(string dataDir, Diagram diagram)
+        public static void AddSamplePlay(List<Play> plays)
         {
-            MemoryStream pdfStream = new MemoryStream();
-            diagram.Save(pdfStream, SaveFileFormat.Pdf);
-            diagram.Save(dataDir + "ExportToPDF.vsdx", SaveFileFormat.Vsdx);
-
-            FileStream pdfFileStream = new FileStream(dataDir + "ExportToPDF_out.pdf", FileMode.Create, FileAccess.Write);
-            pdfStream.WriteTo(pdfFileStream);
-            pdfFileStream.Close();
-            pdfStream.Close();
+            double x = 4.25;
+            plays.Add(new Play(new List<IDiagramGroup>{
+                new SkillPlayerGroup(0.4, 0.3)
+                    .Add("X", 7.25 - x, 4.25 - x)
+                    .Add("Y", 3 - x, 3.9 - x)
+                    .Add("Z", 1.25 - x, 4.25 - x)
+                    .Add("Q", 4.25 - x, 3.25 - x)
+                    .Add("T", 3.75 - x, 3 - x)
+                    .Add("H", 6.3 - x, 3.9 - x),
+                new CenterFormation(0.4, 0.3, 0.5)
+            }));
         }
     }
 }
