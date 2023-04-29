@@ -1,0 +1,25 @@
+﻿<Properties StartupConfiguration="{28A46513-EE87-44A9-9FAC-14153EC29B5F}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="jsonTesting/Program.cs">
+    <Files>
+      <File FileName="jsonTesting/Program.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="jsonTesting" expanded="True">
+            <Node name="jsonTesting" expanded="True">
+              <Node name="Program.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.jsonTesting PreferredExecutionTarget="MonoDevelop.Default" />
+</Properties>
