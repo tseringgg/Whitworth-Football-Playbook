@@ -116,18 +116,18 @@ namespace ReadFromExcelFIle
             {
                 for (int i = 0; i < plays_data.Count; i++)
                 {
-                    System.Diagnostics.Debug.Print(plays_data[i].Table[0].name);
+                    System.Diagnostics.Debug.Print(plays_data[i].table[0].name);  
                 }
 
 
             }
 
-            static List<Play> JSONresponse()
+            static List<Type> JSONresponse()
             {
                 string JSONFileName = "../../../file.json";
                 if (File.Exists(JSONFileName))
                 {
-                    var plays = JsonConvert.DeserializeObject<List<Play>>
+                    var plays = JsonConvert.DeserializeObject<List<Type>>
                                 (File.ReadAllText(JSONFileName));
 
                     return plays;
@@ -169,7 +169,7 @@ namespace ReadFromExcelFIle
 
 
         class PlaySheet {
-            List<Play> Plays;
+            List<Type> Plays;
             string filename;
 
             PlaySheet(string filename) {
