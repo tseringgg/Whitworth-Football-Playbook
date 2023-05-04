@@ -32,19 +32,19 @@ namespace TestExportAndAppWindow
             diagram.Pages[0].DrawRectangle(pinX, pinY, width, height);
 
             // Set shape properties 
-            Aspose.Diagram.Shape rectangle = diagram.Pages[0].Shapes[0];
-            rectangle.XForm.PinX.Value = 5;
-            rectangle.XForm.PinY.Value = 5;
-            rectangle.Type = TypeValue.Shape;
-            rectangle.Text.Value.Add(new Cp(0));
-            rectangle.Text.Value.Add(new Txt("Export image number 1"));
-            rectangle.Chars.Add(new Aspose.Diagram.Char());
-            rectangle.Chars[0].Size.Value = .1;
-            rectangle.Line.LineColor.Value = "#ff0000";
-            rectangle.Line.LineWeight.Value = 0.1;
-            rectangle.Line.Rounding.Value = 0.1;
-            rectangle.Fill.FillBkgnd.Value = "#ff00ff";
-            rectangle.Fill.FillForegnd.Value = "#ebf8df";
+            Aspose.Diagram.Shape shape = diagram.Pages[0].Shapes[0];
+            shape.XForm.PinX.Value = 5;
+            shape.XForm.PinY.Value = 5;
+            shape.Type = TypeValue.Shape;
+            shape.Text.Value.Add(new Cp(0));
+            shape.Text.Value.Add(new Txt("Export image number 1"));
+            shape.Chars.Add(new Aspose.Diagram.Char());
+            shape.Chars[0].Size.Value = .1;
+            shape.Line.LineColor.Value = "#ff0000";
+            shape.Line.LineWeight.Value = 0.1;
+            shape.Line.Rounding.Value = 0.1;
+            shape.Fill.FillBkgnd.Value = "#ff00ff";
+            shape.Fill.FillForegnd.Value = "#ebf8df";
 
             //Set up save path and format for diagram and save to location
             string dataDir = "../CreateDiagram_out.png";
@@ -55,22 +55,32 @@ namespace TestExportAndAppWindow
             diagram = new Diagram();
 
             width = 7; height = 4; pinX = 4.25; pinY = 4.5;
-            diagram.Pages[0].DrawRectangle(pinX, pinY, width, height);
+            diagram.Pages[0].DrawEllipse(pinX, pinY, width, height);
 
             // Set shape properties 
-            rectangle = diagram.Pages[0].Shapes[0];
-            rectangle.XForm.PinX.Value = 4;
-            rectangle.XForm.PinY.Value = 4;
-            rectangle.Type = TypeValue.Shape;
-            rectangle.Text.Value.Add(new Cp(0));
-            rectangle.Text.Value.Add(new Txt("Export image number 2"));
-            rectangle.Chars.Add(new Aspose.Diagram.Char());
-            rectangle.Chars[0].Size.Value = .1;
-            rectangle.Line.LineColor.Value = "#0000ff";
-            rectangle.Line.LineWeight.Value = 0.1;
-            rectangle.Line.Rounding.Value = 0.1;
-            rectangle.Fill.FillBkgnd.Value = "#0000ff";
-            rectangle.Fill.FillForegnd.Value = "#ffff00";
+            shape = diagram.Pages[0].Shapes[0];
+            shape.XForm.PinX.Value = 4;
+            shape.XForm.PinY.Value = 4;
+            shape.Type = TypeValue.Shape;
+            shape.Text.Value.Add(new Cp(0));
+            shape.Text.Value.Add(new Txt("Export image number 2"));
+            shape.Chars.Add(new Aspose.Diagram.Char());
+            shape.Chars[0].Size.Value = .5;
+            shape.Line.LineColor.Value = "#0000ff";
+            shape.Line.LineWeight.Value = 0.1;
+            shape.Line.Rounding.Value = 0.1;
+            shape.Fill.FillBkgnd.Value = "#0000ff";
+            shape.Fill.FillForegnd.Value = "#ffff00";
+
+            //Set up line properties
+            shape.Line.LinePattern.Value = 1;
+            shape.Line.LineColor.Ufe.F = "RGB(255,255,255)";
+            shape.Line.Rounding.Value = 0.3125;
+            shape.Line.LineCap.Value = BOOL.True;
+            shape.Line.BeginArrow.Value = 4;
+            shape.Line.EndArrow.Value = 4;
+            shape.Line.BeginArrowSize.Value = ArrowSizeValue.Large;
+            shape.Line.EndArrowSize.Value = ArrowSizeValue.Large;
 
             //Set up save path and format for diagram and save to location
             dataDir = "../CreateDiagram2_out.png";

@@ -62,15 +62,15 @@ namespace ReadFromExcelFIle
 
 
 
-            WorkBook workBook = WorkBook.Load(@"../../../PACIFIC_CALL_SHEET_MIX_DOWNS.xlsx");
-            WorkSheet workSheet = workBook.GetWorkSheet("CALL_SHEET_PG_1_(11x17)");
+            WorkBook workBook = WorkBook.Load(@"../../../Spring_Football_2023.xlsx");
+            WorkSheet workSheet = workBook.GetWorkSheet("Install_1");
 
             // TODO: 
             //       - Write error case if the workbook and sheets are not valid
 
 
             // Gets All Data between this range
-            IronXL.Range myRange = workSheet.GetRange("D4:E4");
+            IronXL.Range myRange = workSheet.GetRange("A4:F57");
 
             //Console.WriteLine(myRange.ToString());
 
@@ -86,16 +86,41 @@ namespace ReadFromExcelFIle
             {
 
                 singlePlay.Add(rows[i]);
-                splitSinglePlay = singlePlay[i].Split(' ', '\t', '\r');
+                splitSinglePlay = singlePlay[0].Split(' ', '\t', '\r');
                 List<string> temp = new List<string>();
-                foreach (string s in splitSinglePlay)
-                {
-                    temp.Add(s);
+                //List<string> temp2 = new List<string>();
+                string temp2 = "";
+
+                for (int j = 0; j < splitSinglePlay.Length; j++) {
+                    if (splitSinglePlay[j] != "")
+                    {
+                        temp2 = splitSinglePlay[j];
+                        //temp2.Add(singlePlay[j]);
+
+
+                        //singlePlay[j] = "";
+                        //singlePlay.Remove(singlePlay[j]);
+                        //j--;
+                        temp.Add(temp2);
+                    }
+                    
+                    
                 }
 
-                // TODO: Try to add empty lists to "plays" so I can add "Split Single Play" to them
-                plays.Add(temp); // Adds an empty list to plays to get ready to add TempVect Elements in that spot
 
+                //foreach (string s in splitSinglePlay)
+                //{
+                //    if (s == "\t") {
+                //        s = "";
+                //    }
+                //    temp.Add(s);
+                //}
+
+                // TODO: Try to add empty lists to "plays" so I can add "Split Single Play" to them
+                plays.Add(new List<string>(temp)); // Adds an empty list to plays to get ready to add TempVect Elements in that spot
+                temp.Clear();
+                singlePlay.Clear();
+                temp2 = "";
             }
 
 
@@ -111,30 +136,30 @@ namespace ReadFromExcelFIle
 
 
             // Store Deserialized object from JSON - https://www.youtube.com/watch?v=cGKA8wRCA0A
-            var plays_data = JSONresponse();
-            if (plays_data != null)
-            {
-                for (int i = 0; i < plays_data.Count; i++)
-                {
-                    System.Diagnostics.Debug.Print(plays_data[i].Table[0].name);
-                }
+            //var plays_data = JSONresponse();
+            //if (plays_data != null)
+            //{
+            //    for (int i = 0; i < plays_data.Count; i++)
+            //    {
+            //        System.Diagnostics.Debug.Print(plays_data[i].table[0].name);  
+            //    }
 
 
-            }
+            //}
 
-            static List<Play> JSONresponse()
-            {
-                string JSONFileName = "../../../file.json";
-                if (File.Exists(JSONFileName))
-                {
-                    var plays = JsonConvert.DeserializeObject<List<Play>>
-                                (File.ReadAllText(JSONFileName));
+            //static List<Type> JSONresponse()
+            //{
+            //    string JSONFileName = "../../../file.json";
+            //    if (File.Exists(JSONFileName))
+            //    {
+            //        var plays = JsonConvert.DeserializeObject<List<Type>>
+            //                    (File.ReadAllText(JSONFileName));
 
-                    return plays;
-                }
+            //        return plays;
+            //    }
 
-                return null;
-            }
+            //    return null;
+            //}
         }
 
         class Play_1 {
@@ -169,7 +194,7 @@ namespace ReadFromExcelFIle
 
 
         class PlaySheet {
-            List<Play> Plays;
+            List<Type> Plays;
             string filename;
 
             PlaySheet(string filename) {

@@ -1,0 +1,10 @@
+C:\Users\mpala\source\repos\whitworth-football\UIPrototype\UIPrototype\bin\Debug\UIPrototype.exe.config
+C:\Users\mpala\source\repos\whitworth-football\UIPrototype\UIPrototype\bin\Debug\UIPrototype.exe
+C:\Users\mpala\source\repos\whitworth-football\UIPrototype\UIPrototype\bin\Debug\UIPrototype.pdb
+C:\Users\mpala\source\repos\whitworth-football\UIPrototype\UIPrototype\obj\Debug\UIPrototype.csproj.AssemblyReference.cache
+C:\Users\mpala\source\repos\whitworth-football\UIPrototype\UIPrototype\obj\Debug\UIPrototype.csproj.SuggestedBindingRedirects.cache
+C:\Users\mpala\source\repos\whitworth-football\UIPrototype\UIPrototype\obj\Debug\UIPrototype.Properties.Resources.resources
+C:\Users\mpala\source\repos\whitworth-football\UIPrototype\UIPrototype\obj\Debug\UIPrototype.csproj.GenerateResource.cache
+C:\Users\mpala\source\repos\whitworth-football\UIPrototype\UIPrototype\obj\Debug\UIPrototype.csproj.CoreCompileInputs.cache
+C:\Users\mpala\source\repos\whitworth-football\UIPrototype\UIPrototype\obj\Debug\UIPrototype.exe
+C:\Users\mpala\source\repos\whitworth-football\UIPrototype\UIPrototype\obj\Debug\UIPrototype.pdb

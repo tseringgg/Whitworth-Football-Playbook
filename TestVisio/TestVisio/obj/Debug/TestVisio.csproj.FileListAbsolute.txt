@@ -1,0 +1,8 @@
+C:\Users\mpala\source\repos\whitworth-football\TestVisio\TestVisio\bin\Debug\TestVisio.exe.config
+C:\Users\mpala\source\repos\whitworth-football\TestVisio\TestVisio\bin\Debug\TestVisio.exe
+C:\Users\mpala\source\repos\whitworth-football\TestVisio\TestVisio\bin\Debug\TestVisio.pdb
+C:\Users\mpala\source\repos\whitworth-football\TestVisio\TestVisio\obj\Debug\TestVisio.csproj.AssemblyReference.cache
+C:\Users\mpala\source\repos\whitworth-football\TestVisio\TestVisio\obj\Debug\TestVisio.csproj.SuggestedBindingRedirects.cache
+C:\Users\mpala\source\repos\whitworth-football\TestVisio\TestVisio\obj\Debug\TestVisio.csproj.CoreCompileInputs.cache
+C:\Users\mpala\source\repos\whitworth-football\TestVisio\TestVisio\obj\Debug\TestVisio.exe
+C:\Users\mpala\source\repos\whitworth-football\TestVisio\TestVisio\obj\Debug\TestVisio.pdb
