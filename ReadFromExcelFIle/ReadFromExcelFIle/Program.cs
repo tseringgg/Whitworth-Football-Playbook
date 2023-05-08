@@ -14,20 +14,6 @@ namespace ReadFromExcelFIle
     class Program
     {
 
-        //static void ReadJson()
-        //{
-        //    string text = File.ReadAllText(@"./db.json");
-        //    var play = JsonSerializer.Deserialize<Play>(text);
-
-        //    Console.WriteLine($"Full_Play: {play.Full_Play}");
-
-        //    //Console.WriteLine($"QB_pos: {play.qb}");
-        //    //Console.WriteLine($"H_pos: {play.h}");
-        //    //Console.WriteLine($"X_pos: {play.x}");
-        //    //Console.WriteLine($"Y_pos: {play.y}");
-        //    //Console.WriteLine($"Z_pos: {play.z}");
-        //}
-
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
@@ -135,31 +121,14 @@ namespace ReadFromExcelFIle
             }
 
 
-            // Store Deserialized object from JSON - https://www.youtube.com/watch?v=cGKA8wRCA0A
-            //var plays_data = JSONresponse();
-            //if (plays_data != null)
-            //{
-            //    for (int i = 0; i < plays_data.Count; i++)
-            //    {
-            //        System.Diagnostics.Debug.Print(plays_data[i].table[0].name);  
-            //    }
+        }
+
+        struct playContents {
+            string formation;
+            string concept;
+            string categoryName;
 
 
-            //}
-
-            //static List<Type> JSONresponse()
-            //{
-            //    string JSONFileName = "../../../file.json";
-            //    if (File.Exists(JSONFileName))
-            //    {
-            //        var plays = JsonConvert.DeserializeObject<List<Type>>
-            //                    (File.ReadAllText(JSONFileName));
-
-            //        return plays;
-            //    }
-
-            //    return null;
-            //}
         }
 
         class Play_1 {
