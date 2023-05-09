@@ -15,6 +15,10 @@ namespace WinFormsWithAspose
 
         public FourLeftPlayDrawer(Page page, List<Play> plays)
         {
+            if(plays.Count > 4)
+            {
+                throw new ArgumentException("Arg must be a list with a count of 4 or less. Arg count was: " + plays.Count);
+            }
             this.page = page;
             this.plays = plays;
         }

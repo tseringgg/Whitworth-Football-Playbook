@@ -10,11 +10,13 @@ namespace WinFormsWithAspose
         public double Width { get; set; }
         public double Height { get; set; }
         public double Scale { get; set; }
-        public SkillPlayerGroup(double width, double height)
+        public string PlayTitle { get; set; }
+        public SkillPlayerGroup(string title, double width, double height)
         {
             X = 0;
             Y = 0;
             Scale = 1;
+            PlayTitle = title;
             Width = width;
             Height = height;
             drawables = new List<IDrawable>();
@@ -27,7 +29,7 @@ namespace WinFormsWithAspose
 
         public void Draw(Page page)
         {
-
+            page.AddText(X, Y+1, Width, Height, PlayTitle);
             foreach (TextBubble drawable in drawables) 
             {
                 drawable.Scale = Scale;
