@@ -109,6 +109,39 @@ namespace ReadFromExcelFIle
                 temp2 = "";
             }
 
+            //playContents currPlayContents = null;
+            //List<playContents> playContentList = null;
+            //// Prints the contents of the 2D List "play"
+            //for (int j = 0; j < plays.Count; j++)
+            //{
+                
+            //    if (j == 0) { continue; }
+            //    if (plays[j].Count == 0) {
+            //        if (currPlayContents != null) {
+            //            playContentList.Add(currPlayContents);
+            //        }
+            //        currPlayContents = new playContents();
+
+            //    }
+            //    else if (plays[j - 1].Count == 0) {
+            //        currPlayContents.categoryName = plays[j].ToString();
+            //    }
+            //    else {
+            //        for (int k = 0; k < plays[j].Count; k++)
+            //        {
+            //            if (plays[j][k] == oneoftheformaitons) { }
+            //        }
+            //        currPlayContents.formation.Add(plays[j]);
+            //    }
+
+
+            //    // Add to object attributes formation & concept until list itself is count = 0 --> Then we want to reset object category name
+
+            //}
+
+
+            // TODO: Fix parser to just take in each column in the excel file as a string in a list
+
 
             // Prints the contents of the 2D List "play"
             for (int j = 0; j < plays.Count; j++)
@@ -121,13 +154,17 @@ namespace ReadFromExcelFIle
             }
 
 
+
         }
 
-        struct playContents {
-            string formation;
-            string concept;
-            string categoryName;
-
+        public class playContents {
+            public List<string> formation;
+            public List<string> concept;
+            public string categoryName;
+            public playContents()
+            {
+                    
+            }
 
         }
 
