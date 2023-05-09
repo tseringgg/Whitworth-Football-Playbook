@@ -63,35 +63,83 @@ namespace ReadFromExcelFIle
             string[] rows = myRange.ToString().Split(new char[] { '\n' });
 
             List<List<string>> plays = new List<List<string>>();
-            List<string> singlePlay = new List<string>();
 
 
-            string[] splitSinglePlay;
+            string singlePlay = "";
+
+            List<playList> allPlays = new List<playList> { };
+            int counter = 0;
 
             for (int i = 0; i < rows.Length; i++)
             {
+                singlePlay = rows[i];
+                
+                if (singlePlay.IndexOf('\t') != 0)
+                {
+                    counter++;
 
-                singlePlay.Add(rows[i]);
-                splitSinglePlay = singlePlay[0].Split(' ', '\t', '\r');
-                List<string> temp = new List<string>();
-                //List<string> temp2 = new List<string>();
-                string temp2 = "";
+                    if (counter > 4) {
+                        int j = singlePlay.IndexOf("\t");
 
-                for (int j = 0; j < splitSinglePlay.Length; j++) {
-                    if (splitSinglePlay[j] != "")
-                    {
-                        temp2 = splitSinglePlay[j];
-                        //temp2.Add(singlePlay[j]);
+                        allPlays.Add(new playList());
 
-
-                        //singlePlay[j] = "";
-                        //singlePlay.Remove(singlePlay[j]);
-                        //j--;
-                        temp.Add(temp2);
+                        // Creates substring of the category name in order to add it to object
+                        allPlays[allPlays.Count - 1].categoryName = singlePlay.ToString().Substring(j);
                     }
                     
-                    
                 }
+                if (singlePlay.IndexOf('\t') == 0 && counter > 4)
+                {
+                    int k = singlePlay.IndexOf("\t", 1);
+                    int prevIndex = 1;
+
+                    // Adds tags to list
+                    string temp = singlePlay.Substring(prevIndex, k);
+                    allPlays[allPlays.Count - 1].tags.Add(temp);
+
+                    prevIndex = k + 2;
+
+                    k = singlePlay.IndexOf("\t", prevIndex);
+
+                    // Adds tags to list
+                    allPlays[allPlays.Count - 1].personell.Add(singlePlay.Substring(prevIndex, k));
+
+                    prevIndex = k + 2;
+
+                    // Adds personell to list
+                    allPlays[allPlays.Count - 1].formation.Add(singlePlay.Substring(prevIndex, singlePlay.Length - 1));
+
+                }
+            }
+
+
+                
+
+
+                //for (int i = 0; i < rows.Length; i++)
+                //{
+
+                //    singlePlay.Add(rows[i]);
+                //    splitSinglePlay = singlePlay[0].Split(' ', '\t', '\r');
+                //    List<string> temp = new List<string>();
+                //    //List<string> temp2 = new List<string>();
+                //    string temp2 = "";
+
+                //    for (int j = 0; j < splitSinglePlay.Length; j++) {
+                //        if (splitSinglePlay[j] != "")
+                //        {
+                //            temp2 = splitSinglePlay[j];
+                //            //temp2.Add(singlePlay[j]);
+
+
+                //            //singlePlay[j] = "";
+                //            //singlePlay.Remove(singlePlay[j]);
+                //            //j--;
+                //            temp.Add(temp2);
+                //        }
+
+
+                //    }
 
 
                 //foreach (string s in splitSinglePlay)
@@ -102,12 +150,12 @@ namespace ReadFromExcelFIle
                 //    temp.Add(s);
                 //}
 
-                // TODO: Try to add empty lists to "plays" so I can add "Split Single Play" to them
-                plays.Add(new List<string>(temp)); // Adds an empty list to plays to get ready to add TempVect Elements in that spot
-                temp.Clear();
-                singlePlay.Clear();
-                temp2 = "";
-            }
+                //// TODO: Try to add empty lists to "plays" so I can add "Split Single Play" to them
+                //plays.Add(new List<string>(temp)); // Adds an empty list to plays to get ready to add TempVect Elements in that spot
+                //temp.Clear();
+                //singlePlay.Clear();
+                //temp2 = "";
+            //}
 
             //playContents currPlayContents = null;
             //List<playContents> playContentList = null;
@@ -157,15 +205,11 @@ namespace ReadFromExcelFIle
 
         }
 
-        public class playContents {
-            public List<string> formation;
-            public List<string> concept;
+        public class playList {
             public string categoryName;
-            public playContents()
-            {
-                    
-            }
-
+            public List<string> tags;
+            public List<string> personell;
+            public List<string> formation;
         }
 
         class Play_1 {
