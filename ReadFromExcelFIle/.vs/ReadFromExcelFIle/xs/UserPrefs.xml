@@ -7,8 +7,10 @@
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="ReadFromExcelFIle" expanded="True" selected="True">
-            <Node name="ReadFromExcelFIle" expanded="True" />
+          <Node name="ReadFromExcelFIle" expanded="True">
+            <Node name="ReadFromExcelFIle" expanded="True">
+              <Node name="Program.cs" selected="True" />
+            </Node>
           </Node>
         </State>
       </Pad>
@@ -19,7 +21,6 @@
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
       <Breakpoint file="/Users/michaelsmith/Desktop/Whitworth_Stuff/Spring 2023/CS 472/whitworth-football/ReadFromExcelFIle/ReadFromExcelFIle/Program.cs" relfile="ReadFromExcelFIle/Program.cs" line="195" column="1" />
-      <Breakpoint file="/Users/michaelsmith/Desktop/Whitworth_Stuff/Spring 2023/CS 472/whitworth-football/ReadFromExcelFIle/ReadFromExcelFIle/Program.cs" relfile="ReadFromExcelFIle/Program.cs" line="92" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />

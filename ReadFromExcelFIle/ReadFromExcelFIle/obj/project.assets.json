@@ -366,13 +366,5 @@
         "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.408/RuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problem reading the cache file /Users/michaelsmith/Desktop/Whitworth_Stuff/Spring 2023/CS 472/whitworth-football/ReadFromExcelFIle/ReadFromExcelFIle/obj/project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  }
 }

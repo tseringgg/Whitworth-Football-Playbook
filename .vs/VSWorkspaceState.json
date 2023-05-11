@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\ReadFromExcelFIle",
+    "\\ReadFromExcelFIle\\ReadFromExcelFIle"
   ],
-  "SelectedNode": "\\Install-Package",
+  "SelectedNode": "\\ReadFromExcelFIle\\ReadFromExcelFIle\\Program.cs",
   "PreviewInSolutionExplorer": false
 }

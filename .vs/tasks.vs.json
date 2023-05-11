@@ -1,0 +1,10 @@
+{
+  "version": "0.2.1",
+  "tasks": [
+    {
+      "taskLabel": "task-ReadFromExcelFIle",
+      "appliesTo": "ReadFromExcelFIle/ReadFromExcelFIle.sln",
+      "type": "launch"
+    }
+  ]
+}
