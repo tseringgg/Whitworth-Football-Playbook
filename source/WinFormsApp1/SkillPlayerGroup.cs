@@ -29,7 +29,7 @@ namespace WinFormsWithAspose
 
         public void Draw(Page page)
         {
-            page.AddText(X, Y+1, Width, Height, PlayTitle);
+            page.AddText(X+0.5, Y+1, Width+1, Height, PlayTitle);
             foreach (TextBubble drawable in drawables) 
             {
                 drawable.Scale = Scale;

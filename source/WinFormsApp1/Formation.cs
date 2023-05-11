@@ -9,6 +9,7 @@ namespace WinFormsWithAspose
     public class Formation
     {
         public string? name;
+        public string? side;
         public double x_x;
         public double x_y;
         public double h_x;
@@ -21,9 +22,10 @@ namespace WinFormsWithAspose
         public double y_y;
         public double z_x;
         public double z_y;
-        public Formation(string name, double x_x, double x_y, double h_x, double h_y, double t_x, double t_y, double q_x, double q_y, double y_x, double y_y, double z_x, double z_y)
+        public Formation(string name, string side, double x_x, double x_y, double h_x, double h_y, double t_x, double t_y, double q_x, double q_y, double y_x, double y_y, double z_x, double z_y)
         {
             this.name = name;
+            this.side = side;
             this.x_x = x_x;
             this.x_y = x_y;
             this.h_x = h_x;

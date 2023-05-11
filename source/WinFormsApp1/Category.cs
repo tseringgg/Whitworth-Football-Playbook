@@ -1,12 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Numerics;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-
-namespace WinFormsWithAspose
+﻿namespace WinFormsWithAspose
 {
     public class Category
     {
@@ -46,7 +38,7 @@ namespace WinFormsWithAspose
             // Add to it
             PaginatedPlays[index].Add(new Play(new List<IDiagramGroup>
             {
-                new SkillPlayerGroup(form.name, 0.4, 0.3)
+                new SkillPlayerGroup(form.name + " " + form.side, 0.4, 0.3)
                 .Add("X", form.x_x, form.x_y)
                 .Add("Y", form.y_x, form.y_y)
                 .Add("Z", form.z_x, form.z_y)
@@ -60,7 +52,7 @@ namespace WinFormsWithAspose
         {
             if(index < 0 || index >= PaginatedPlays.Count)
                 throw new ArgumentOutOfRangeException("arg: " + index + " range: [0," + (PaginatedPlays.Count - 1) + "]");
-            return PaginatedPlays[index];
+            return PaginatedPlays[index]; // returns a list of 4 plays at the particular index
         }
     }
 }
