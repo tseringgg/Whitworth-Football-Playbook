@@ -41,19 +41,29 @@ namespace ReadFromExcelFIle
                 this.filename = filename;
             }
 
+            // Initialize variable for worksheets
+            //WorkSheet workSheet;
 
             // May want to change passing a filename or saving it in a constructor
             public bool ParsePlays(string fileName)
             {
-                WorkBook workBook = WorkBook.Load(fileName);
-                WorkSheet workSheet = workBook.GetWorkSheet("Install_1");
+                WorkSheet workSheet;
 
-                // TODO: 
-                //       - Write error case if the workbook and sheets are not valid
-                if (false)
+                // Error Case for if the WorkBook or WorkSheet are not valid
+                try
                 {
+                    WorkBook workBook = WorkBook.Load(fileName);
+                    workSheet = workBook.GetWorkSheet("Install__1");
+                }
+                catch (FileNotFoundException e) {
+                    Console.WriteLine(e.ToString());
                     return false;
                 }
+
+                //if (false)
+                //{
+                //    return false;
+                //}
 
 
                 // Gets All Data between this range
@@ -130,38 +140,6 @@ namespace ReadFromExcelFIle
                     Console.WriteLine();
                 }
             }
-        }
-
-        class Play_1
-        {
-            // "side" = left/right, "strength" = strong/weak
-
-            //string formations, side, strength, passProtection, passDescription;
-            public string qb, h, x, y, z;
-
-            // Name with underscore is the actual object for player coordinates
-            public Player qb_, rb_, x_, y_, z_, h_;
-
-            //Play(List<string> plays) {
-            //    //plays[0]
-            //}
-
-            public void QueryPlayer()
-            {
-
-            }
-
-            public void GenerateVSDX()
-            {
-
-            }
-
-        }
-
-        struct Player
-        {
-            public float x, y;
-            public List<List<float>> arrowSteps;
         }
     }
 }
