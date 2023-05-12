@@ -24,7 +24,6 @@ namespace ReadFromExcelFIle
             playsheet.PrintPlays();
         }
 
-        //Play list stores a single catagory of plays
         class playList {
             public string categoryName = "";
             public List<string> tags = new List<string> { };
@@ -32,21 +31,19 @@ namespace ReadFromExcelFIle
             public List<string> formations = new List<string> { };
         }
 
-        //Playsheets stores and manages the parser for the plays
         class PlaySheets {
-            //List of playsheets. Each playsheet is its own catagory
             public List<playList> Plays = new List<playList> { };
             //Filename of the excel file to parse
             string filename = "";
 
-            public PlaySheets(string filename) {
+            public PlaySheets(string filename)
+            {
                 this.filename = filename;
             }
 
 
             // May want to change passing a filename or saving it in a constructor
             public bool ParsePlays(string fileName) {
-                //Open a excel file to parse
                 WorkBook workBook = WorkBook.Load(fileName);
                 WorkSheet workSheet = workBook.GetWorkSheet("Install_1");
 
@@ -113,7 +110,8 @@ namespace ReadFromExcelFIle
                 return true;
             }
 
-            public void ParsePlays() {
+            public void ParsePlays()
+            {
                 ParsePlays(filename);
             }
 
@@ -167,4 +165,3 @@ namespace ReadFromExcelFIle
         }
     }
 }
-
