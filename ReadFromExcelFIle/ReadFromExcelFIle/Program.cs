@@ -41,9 +41,6 @@ namespace ReadFromExcelFIle
                 this.filename = filename;
             }
 
-            // Initialize variable for worksheets
-            //WorkSheet workSheet;
-
             // May want to change passing a filename or saving it in a constructor
             public bool ParsePlays(string fileName)
             {
@@ -53,7 +50,7 @@ namespace ReadFromExcelFIle
                 try
                 {
                     WorkBook workBook = WorkBook.Load(fileName);
-                    workSheet = workBook.GetWorkSheet("Install__1");
+                    workSheet = workBook.GetWorkSheet("Install_1");
                 }
                 catch (FileNotFoundException e)
                 {
