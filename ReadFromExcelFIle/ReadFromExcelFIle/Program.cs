@@ -23,33 +23,45 @@ namespace ReadFromExcelFIle
             playsheet.PrintPlays();
         }
 
-        class playList {
+        class playList
+        {
             public string categoryName = "";
             public List<string> tags = new List<string> { };
             public List<string> personell = new List<string> { };
             public List<string> formations = new List<string> { };
         }
 
-        class PlaySheets {
+        class PlaySheets
+        {
             public List<playList> Plays = new List<playList> { };
             string filename = "";
 
-            public PlaySheets(string filename) {
+            public PlaySheets(string filename)
+            {
                 this.filename = filename;
             }
 
-
             // May want to change passing a filename or saving it in a constructor
-            public bool ParsePlays(string fileName) {
-                WorkBook workBook = WorkBook.Load(fileName);
-                WorkSheet workSheet = workBook.GetWorkSheet("Install_1");
+            public bool ParsePlays(string fileName)
+            {
+                WorkSheet workSheet;
 
-                // TODO: 
-                //       - Write error case if the workbook and sheets are not valid
-                if (false)
+                // Error Case for if the WorkBook or WorkSheet are not valid
+                try
                 {
+                    WorkBook workBook = WorkBook.Load(fileName);
+                    workSheet = workBook.GetWorkSheet("Install_1");
+                }
+                catch (FileNotFoundException e)
+                {
+                    Console.WriteLine(e.ToString());
                     return false;
                 }
+
+                //if (false)
+                //{
+                //    return false;
+                //}
 
 
                 // Gets All Data between this range
@@ -106,7 +118,8 @@ namespace ReadFromExcelFIle
                 return true;
             }
 
-            public void ParsePlays() {
+            public void ParsePlays()
+            {
                 ParsePlays(filename);
             }
 
@@ -126,38 +139,5 @@ namespace ReadFromExcelFIle
                 }
             }
         }
-
-        class Play_1
-        {
-            // "side" = left/right, "strength" = strong/weak
-
-            //string formations, side, strength, passProtection, passDescription;
-            public string qb, h, x, y, z;
-
-            // Name with underscore is the actual object for player coordinates
-            public Player qb_, rb_, x_, y_, z_, h_;
-
-            //Play(List<string> plays) {
-            //    //plays[0]
-            //}
-
-            public void QueryPlayer()
-            {
-
-            }
-
-            public void GenerateVSDX()
-            {
-
-            }
-
-        }
-
-        struct Player
-        {
-            public float x, y;
-            public List<List<float>> arrowSteps;
-        }
     }
 }
-

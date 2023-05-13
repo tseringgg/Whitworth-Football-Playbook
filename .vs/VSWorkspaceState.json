@@ -2,8 +2,10 @@
   "ExpandedNodes": [
     "",
     "\\ReadFromExcelFIle",
-    "\\ReadFromExcelFIle\\ReadFromExcelFIle"
+    "\\ReadFromExcelFIle\\ReadFromExcelFIle",
+    "\\source",
+    "\\source\\WinFormsApp1"
   ],
-  "SelectedNode": "\\ReadFromExcelFIle\\ReadFromExcelFIle\\Program.cs",
+  "SelectedNode": "\\source\\WinFormsApp1\\Program.cs",
   "PreviewInSolutionExplorer": false
 }

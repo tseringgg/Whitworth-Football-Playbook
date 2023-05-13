@@ -18,6 +18,8 @@ namespace WinFormsApp1
             string readFromFormation = File.ReadAllText(@"../../../formation.json");
             List<Formation> formationsTable = JsonConvert.DeserializeObject<DataTable<Formation>>(readFromFormation).table;
 
+            //Title of the window
+            openFileDialog.Title = "Select a playsheet";
 
             PlaySheet playsheet = new PlaySheet(fileName);
             playsheet.ParsePlays();
