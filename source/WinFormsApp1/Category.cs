@@ -2,6 +2,7 @@
 {
     public class Category
     {
+        public string Name { get; set; }
         private List<List<Play>> PaginatedPlays;
         public int Count 
         {
@@ -11,11 +12,13 @@
             }
             private set { } 
         }
-        public Category()
+        public Category(string name)
         {
             PaginatedPlays = new();
             PaginatedPlays.Add(new List<Play>());
             Count = 0;
+            Name = name;
+
         }
         public void Add(Formation form)
         {
