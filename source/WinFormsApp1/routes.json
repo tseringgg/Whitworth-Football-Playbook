@@ -1,0 +1,234 @@
+{
+  "table": [
+    {
+      "name": "Brady",
+      "steps": [ "0,1" ],
+      "ending": "flathead"
+    },
+    {
+      "name": "Marino",
+      "steps": [ "0,1" ],
+      "ending": "flathead"
+    },
+    {
+      "name": "Pitt",
+      "steps": [ "0,2", "1,1" ],
+      "ending": "arrow"
+    },
+    {
+      "name": "I/S Slant",
+      "steps": [ "0,1", ".75,1" ],
+      "ending": "arrow"
+    },
+    {
+      "name": "Slant",
+      "steps": [ "0,1", ".75,1" ],
+      "ending": "arrow"
+    },
+    {
+      "name": "O/S Nail",
+      "steps": [ "0,1", ".25,.25" ],
+      "ending": "arrow"
+    },
+    {
+      "name": "Qk Out",
+      "steps": [ "0,1", "-1,0" ],
+      "ending": "arrow"
+    },
+    {
+      "name": "Out",
+      "steps": [ "0,1.25", "-1,0" ],
+      "ending": "arrow"
+    },
+    {
+      "name": "D. Out",
+      "steps": [ "0,2", "-1,0" ],
+      "ending": "arrow"
+    },
+    {
+      "name": "Stick",
+      "steps": [ "0,1", ".25,-.25", "-.25,.25", "0,-1" ],
+      "ending": "arrow"
+    },
+    {
+      "name": "Drive",
+      "steps": [ "1.5,1", "4,0" ],
+      "ending": "arrow"
+    },
+    {
+      "name": "Dig",
+      "steps": [ "0,2", ".75,0" ],
+      "ending": "arrow"
+    },
+    {
+      "name": "Sail",
+      "steps": [ "0,2", "-1.5,0" ],
+      "ending": "arrow"
+    },
+    {
+      "name": "Work It",
+      "steps": [ "0,2.5", ".75,1" ],
+      "ending": "arrow"
+    },
+    {
+      "name": "Chase",
+      "steps": [ "-1,1", "-1,0" ],
+      "ending": "arrow"
+    },
+    {
+      "name": "Bench",
+      "steps": [ "0,2.5", "-1,0" ],
+      "ending": "arrow"
+    },
+    {
+      "name": "Thru",
+      "steps": [ "1,2", ".75,2" ],
+      "ending": "arrow"
+    },
+    {
+      "name": "Pearl",
+      "steps": [ "0,2", ".5,.5", ".05,-.05" ],
+      "ending": "arrow"
+    },
+    {
+      "name": "Speed Dig",
+      "steps": [ "0,2", "1.5,0" ],
+      "ending": "arrow"
+    },
+    {
+      "name": "Elim",
+      "steps": [ "1,1", "4,0" ],
+      "ending": "arrow"
+    },
+    {
+      "name": "Sq. In",
+      "steps": [ "0,2", "1,0" ],
+      "ending": "arrow"
+    },
+    {
+      "name": "Dagger",
+      "steps": [ "0,1", "1,0" ],
+      "ending": "arrow"
+    },
+    {
+      "name": "Spot",
+      "steps": [ "1,1", ".75,1" ],
+      "ending": "circle"
+    },
+    {
+      "name": "Corner",
+      "steps": [ "0,2", "-1,1" ],
+      "ending": "arrow"
+    },
+    {
+      "name": "Pick",
+      "steps": [ ".75,1.2", "3,0" ],
+      "ending": "arrow"
+    },
+    {
+      "name": "Shallow",
+      "steps": [ ".75,1", "3,0" ],
+      "ending": "arrow"
+    },
+    {
+      "name": "Squat",
+      "steps": [ "2,2", "0,.25" ],
+      "ending": "arrow"
+    },
+    {
+      "name": "Bengal",
+      "steps": [ "0,2", ".01,-.05", "-.05,-.075" ],
+      "ending": "none"
+    },
+    {
+      "name": "Lock Seam",
+      "steps": [ "-.25,.25", "0,2" ],
+      "ending": "arrow"
+    },
+    {
+      "name": "Seam Read",
+      "steps": [ "-.25,.25", "0,2" ],
+      "ending": "arrow"
+    },
+    {
+      "name": "Hitch",
+      "steps": [ "0,1", ".25,-.25" ],
+      "ending": "arrow"
+    },
+    {
+      "name": "S Comeback",
+      "steps": [ "-1,2", "-.25,-.25" ],
+      "ending": "arrow"
+    },
+    {
+      "name": "Comeback",
+      "steps": [ "-1,2", "-.25,-.25" ],
+      "ending": "arrow"
+    },
+    {
+      "name": "Sink",
+      "steps": [ "1,2", "0,-.25" ],
+      "ending": "arrow"
+    },
+    {
+      "name": "Flood",
+      "steps": [ ".25,.75", "0,1", "-1.5,0" ],
+      "ending": "arrow"
+    },
+    {
+      "name": "Pylon",
+      "steps": [ "0,2", "-.5,.75" ],
+      "ending": "arrow"
+    },
+    {
+      "name": "Flat",
+      "steps": [ "-.75,.25", "-1,.25" ],
+      "ending": "arrow"
+    },
+    {
+      "name": "Over",
+      "steps": [ "2,2", "2,.2" ],
+      "ending": "arrow"
+    },
+    {
+      "name": "Dover",
+      "steps": [ ".5,.5", ".5,1", "2,1.5", ".75,.2" ],
+      "ending": "arrow"
+    },
+    {
+      "name": "Field Post",
+      "steps": [ "0,2", "1,1" ],
+      "ending": "arrow"
+    },
+    {
+      "name": "Miami",
+      "steps": [ ".5,2", ".5,.25", "0,-.25" ],
+      "ending": "circle"
+    },
+    {
+      "name": "In",
+      "steps": [ "0,2", "1,0" ],
+      "ending": "arrow"
+    },
+    {
+      "name": "Hash",
+      "steps": [ ".5,1", "1,.5" ],
+      "ending": "arrow"
+    },
+    {
+      "name": "Grab Over",
+      "steps": [ ".25,.5", "0,.75", "3,0" ],
+      "ending": "arrow"
+    },
+    {
+      "name": "Hiccup",
+      "steps": [ ".25,.25", "0,1.5", "-25,.25", ".4,.5" ],
+      "ending": "arrow"
+    },
+    {
+      "name": "Spurt",
+      "steps": [ "1,1", "0,-.25" ],
+      "ending": "arrow"
+    }
+  ]
+}

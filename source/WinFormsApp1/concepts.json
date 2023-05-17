@@ -1,0 +1,101 @@
+{
+  "table": [
+    {
+      "name": "Pitt",
+      "routes": [ "Pitt", "I/S Slant", "O/S Nail" ]
+    },
+    {
+      "name": "Sail",
+      "routes": [ "Sail", "Work It" ]
+    },
+    {
+      "name": "Qk Out",
+      "routes": [ "QK Out", "Brady", "Brady", "Brady" ]
+    },
+    {
+      "name": "Oregon",
+      "routes": [ "Stick", "Qk Out" ]
+    },
+    {
+      "name": "Drive",
+      "routes": [ "Drive", "Dig" ]
+    },
+    {
+      "name": "Knife",
+      "routes": [ "Thru", "Pearl" ]
+    },
+    {
+      "name": "Water",
+      "routes": [ "Elim", "Speed Dig" ]
+    },
+    {
+      "name": "Snag",
+      "routes": [ "Spot", "Corner" ]
+    },
+    {
+      "name": "Follow",
+      "routes": [ "Sq. In", "Dagger" ]
+    },
+    {
+      "name": "Mesh",
+      "routes": [ "Pick", "Shallow","Speed Dig" ]
+    },
+    {
+      "name": "Out",
+      "routes": [ "Out" ]
+    },
+    {
+      "name": "Win",
+      "routes": [ "Pick", "Shallow", "Squat" ]
+    },
+    {
+      "name": "Streak",
+      "routes": [ "Seam Read", "Lock Seam", "Bengal", "Bengal" ]
+    },
+    {
+      "name": "Tiger",
+      "routes": [ "S. Comeback", "Sink" ]
+    },
+    {
+      "name": "Dash",
+      "routes": [ "Hitch", "Brady" ]
+    },
+    {
+      "name": "Pylon",
+      "routes": [ "Pylon", "Flood" ]
+    },
+    {
+      "name": "Bunny",
+      "routes": [ "Corner", "Pivot" ]
+    },
+    {
+      "name": "Flat",
+      "routes": [ "Flat", "Over" ]
+    },
+    {
+      "name": "Trail",
+      "routes": [ "Dover", "Work It" ]
+    },
+    {
+      "name": "Shallow",
+      "routes": [ "Shallow" ]
+    },
+    {
+      "name": "Heat",
+      "routes": [ "Field Post", "Miami" ]
+    },
+    {
+      "name": "Climb",
+      "routes": [ "Dover", "In", "Work It", "Brady" ]
+    },
+    {
+      "name": "Rebel",
+      "routes": [ "Hash", "Work It", "Bench", "Brady" ]
+    },
+    {
+      "name": "Hiccup",
+      "routes": [ "Hiccup", "Brady", "Flat", "Grab Over" ]
+    },
+
+  ]
+}
