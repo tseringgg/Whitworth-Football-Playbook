@@ -1,31 +1,34 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ajt44\\OneDrive\\Documents\\softwareEngineering\\seTests\\fullProj2\\whitworth-football\\source\\WinFormsApp1\\WinFormsWithAspose.csproj": {}
+    "C:\\Users\\mpala\\source\\repos\\WhitworthFootball\\source\\WinFormsApp1\\WinFormsWithAspose.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ajt44\\OneDrive\\Documents\\softwareEngineering\\seTests\\fullProj2\\whitworth-football\\source\\WinFormsApp1\\WinFormsWithAspose.csproj": {
+    "C:\\Users\\mpala\\source\\repos\\WhitworthFootball\\source\\WinFormsApp1\\WinFormsWithAspose.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ajt44\\OneDrive\\Documents\\softwareEngineering\\seTests\\fullProj2\\whitworth-football\\source\\WinFormsApp1\\WinFormsWithAspose.csproj",
+        "projectUniqueName": "C:\\Users\\mpala\\source\\repos\\WhitworthFootball\\source\\WinFormsApp1\\WinFormsWithAspose.csproj",
         "projectName": "WinFormsWithAspose",
-        "projectPath": "C:\\Users\\ajt44\\OneDrive\\Documents\\softwareEngineering\\seTests\\fullProj2\\whitworth-football\\source\\WinFormsApp1\\WinFormsWithAspose.csproj",
-        "packagesPath": "C:\\Users\\ajt44\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ajt44\\OneDrive\\Documents\\softwareEngineering\\seTests\\fullProj2\\whitworth-football\\source\\WinFormsApp1\\obj\\",
+        "projectPath": "C:\\Users\\mpala\\source\\repos\\WhitworthFootball\\source\\WinFormsApp1\\WinFormsWithAspose.csproj",
+        "packagesPath": "C:\\Users\\mpala\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\mpala\\source\\repos\\WhitworthFootball\\source\\WinFormsApp1\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
+          "C:\\Users\\mpala\\AppData\\Roaming\\Godot\\mono\\GodotNuGetFallbackFolder",
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\ajt44\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\mpala\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\mpala\\AppData\\Roaming\\NuGet\\config\\Godot.Offline.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net6.0-windows7.0"
+          "net6.0-windows"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -67,7 +70,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -79,7 +83,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }
