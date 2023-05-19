@@ -1,12 +1,67 @@
-﻿using System;
+﻿using Aspose.Diagram;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using PointF = System.Drawing.PointF;
 
 namespace WinFormsWithAspose
 {
-    internal class Route
+    public class Route : IDrawable
     {
+        public double X { get; set; }
+        public double Y { get; set; }
+        public double Width { get; set; }
+        public double Height { get; set; }
+        public double Scale { get; set; }
+        public List<PointF> Motions { get; set; }
+        public string Ending { get; set; }
+        public Route(double x, double y, string ending, List<PointF> motions)
+        {
+            this.X = x;
+            this.Y = y;
+            Motions = motions;
+        }
+
+        public void Draw(Page page)
+        {
+            List<PointF> points = new List<PointF>();
+            points.Add(new PointF((float)X, (float)Y));
+            for (int i = 0; i < Motions.Count; i++)
+            {
+                points.Add(new((float)points[i].X + (float)Motions[i].X, (float)points[i].Y + (float)Motions[i].Y));
+            }
+
+            for (int i = 0; i < points.Count - 1; i++)
+            {
+                page.DrawLine(points[i].X, points[i].Y, points[i + 1].X, points[i + 1].Y);
+            }
+
+            switch (Ending)
+            {
+                case "flathead":
+                    page.DrawLine(points[points.Count - 1].X, points[points.Count - 1].Y, points[points.Count - 1].X - 1, points[points.Count - 1].Y);
+                    page.DrawLine(points[points.Count - 1].X, points[points.Count - 1].Y, points[points.Count - 1].X + 1, points[points.Count - 1].Y);
+                    break;
+                case "arrow":
+
+                    break;
+                case "circle":
+
+                    break;
+                case "none":
+                    break;
+            }
+        }
+        public void DrawFlatHead(Page page, PointF startPoint, PointF endPoint)
+        {
+            // get slope of line
+            // get length of line
+            // try to get inverse slope
+            // get points that are 1/10th of the length away
+            // get perpendicular line equation using endPoint x and y-> y = mx + b
+
+        }
     }
 }

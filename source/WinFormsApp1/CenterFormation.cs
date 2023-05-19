@@ -1,4 +1,5 @@
 ﻿using Aspose.Diagram;
+using PointF = System.Drawing.PointF;
 
 namespace WinFormsWithAspose
 {
@@ -31,6 +32,9 @@ namespace WinFormsWithAspose
 
         public void Draw(Page page)
         {
+
+            routeParser r = new routeParser("Slant", "weener", Convert.ToSingle(X), Convert.ToSingle(Y), page);
+            r.initialize();
             foreach (IDrawable drawable in drawables)
             {
                 drawable.Scale = Scale;
