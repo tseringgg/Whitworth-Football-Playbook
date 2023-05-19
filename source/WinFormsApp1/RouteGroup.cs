@@ -26,6 +26,7 @@ namespace WinFormsWithAspose
 
         private void Init()
         {
+            //this function draws each skill player and their route
             for (int i = 0; i < players.Count && i < routeData.Count; i++)
             {
                 switch (players[i])
@@ -48,7 +49,7 @@ namespace WinFormsWithAspose
         public void Draw(Page page)
         {
             
-            //page.AddText(X + 0.5, Y + 1, Width + 1, Height, PlayTitle);
+            //draws the page and scales it 
             foreach (Route drawable in drawables)
             {
                 drawable.Scale = Scale;
@@ -62,10 +63,12 @@ namespace WinFormsWithAspose
 
         private List<PointF> StringsToSteps(double x, RouteData r)
         {
+            //turn route steps from the json file into pointf objects
             List<PointF> routeSteps = new List<PointF>();
             foreach (string s in r.steps)
             {
                 string[] splitStep = s.Split(',');
+                //if object is on the right side of the formation, then flip its route vertically
                 if(x > 0)
                 {
                     routeSteps.Add(new PointF(-(Convert.ToSingle(splitStep[0])), Convert.ToSingle(splitStep[1])));

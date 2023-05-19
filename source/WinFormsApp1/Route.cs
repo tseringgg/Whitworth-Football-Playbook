@@ -28,19 +28,25 @@ namespace WinFormsWithAspose
 
         public void Draw(Page page)
         {
+            //adds name of player to page
             page.AddText(X+0.4, Y-0.25, 1, Height, Name);
             List<PointF> points = new List<PointF>();
+            //adds starting point
             points.Add(new PointF((float)X, (float)Y));
+            //adds each point for each step in a route
             for (int i = 0; i < Motions.Count; i++)
             {
                 points.Add(new((float)(points[i].X) + (float)(Motions[i].X)*.5f, (float)(points[i].Y) + (float)((Motions[i].Y)*.5f)));
             }
 
+            //draws lines between the points
             for (int i = 0; i < points.Count - 1; i++)
             {
                 page.DrawLine(points[i].X , points[i].Y , points[i + 1].X , points[i + 1].Y);
             }
 
+            //switch statement for how we will end each route
+            //free version of visio limited us a lot here
             switch (Ending)
             {
                 case "flathead":
@@ -57,6 +63,8 @@ namespace WinFormsWithAspose
                     break;
             }
         }
+
+        //not implemented in V1
         public void DrawFlatHead(Page page, PointF startPoint, PointF endPoint)
         {
             // get slope of line

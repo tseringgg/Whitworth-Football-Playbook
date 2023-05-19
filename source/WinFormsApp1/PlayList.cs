@@ -8,6 +8,7 @@ namespace WinFormsWithAspose
 {
     public class PlayList
     {
+        //container for what a play is made of
         public string categoryName = "";
         public List<string> tags = new List<string> { };
         public List<string> personell = new List<string> { };

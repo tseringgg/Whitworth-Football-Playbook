@@ -8,6 +8,7 @@ namespace WinFormsWithAspose
 {
     public class Formation
     {
+        //each player has an x and y coordinate
         public string? name;
         public string? side;
         public double x_x;
@@ -24,6 +25,7 @@ namespace WinFormsWithAspose
         public double z_y;
         public Formation(string name, string side, double x_x, double x_y, double h_x, double h_y, double t_x, double t_y, double q_x, double q_y, double y_x, double y_y, double z_x, double z_y)
         {
+
             this.name = name;
             this.side = side;
             this.x_x = x_x;

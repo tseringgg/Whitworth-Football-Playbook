@@ -49,6 +49,8 @@ namespace WinFormsApp1
 
                         for (int i = 0; i < x.formations.Count; i++)
                         {
+
+                            //parse formation data
                             string substr;
                             if (x.formations[i].Contains(" LT"))
                             {
@@ -63,18 +65,22 @@ namespace WinFormsApp1
                                 Console.WriteLine("Parser failed to find LF or RT keyword!");
                                 return;
                             }
+                            //create list for which players and concepts are in play call
                             List<string> playersTagged;
                             List<string> conceptsInPlay;
 
+                            //parse tags
                             TagsParser tp = new(x.tags[i].Split(" "));
                             tp.Process(out playersTagged, out conceptsInPlay);
 
+                            //containers for what each person does
                             List<string> playerAssignments = new List<string>();
                             List<string> playerRoutes = new List<string>();
                             ConceptParser cp;
 
                             for (int c = 0; c < conceptsInPlay.Count; c++)
                             {
+                                //adds what each person needs to do and in what order 
                                 cp = new ConceptParser(conceptsInPlay[c], playersTagged[c]);
                                 cp.assignRoutes().ForEach(x => playerRoutes.Add(x));
                                 cp.assignPlayer().ForEach(x => playerAssignments.Add(x));
@@ -91,6 +97,7 @@ namespace WinFormsApp1
                                 {
                                     category.Add(form.name + " " + form.side + " " + x.tags[i] ,form, new List<RouteData>()
                                     {
+                                        //adds players and their routes to the page
                                         new RouteParser(playerRoutes[0]).Parse(),
                                         new RouteParser(playerRoutes[1]).Parse(),
                                         new RouteParser(playerRoutes[2]).Parse(),

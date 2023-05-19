@@ -23,10 +23,11 @@ namespace WinFormsWithAspose
 
         public RouteData Parse()
         {
-
+            //deserialize route table
             List<RouteData> routeTable = JsonConvert.DeserializeObject<DataTable<RouteData>>(File.ReadAllText(@"../../../routes.json")).table;
             var dataObject = routeTable.Find(x => x.name == routeName);
 
+            //returns routedata object that has same name as route name
             return dataObject;
 
         }
