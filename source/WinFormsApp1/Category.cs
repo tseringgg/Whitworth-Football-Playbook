@@ -4,6 +4,7 @@
     {
         public string Name { get; set; }
         private List<List<Play>> PaginatedPlays;
+
         public int Count 
         {
             get
@@ -20,7 +21,7 @@
             Name = name;
 
         }
-        public void Add(Formation form)
+        public void Add(Formation form, List<RouteData> routeData)
         {
             // find first List that doesn't have 4 plays
             int index = 0;
@@ -48,7 +49,8 @@
                 .Add("Q", form.q_x, form.q_y)
                 .Add("T", form.t_x, form.t_y)
                 .Add("H", form.h_x, form.h_y),
-                    new CenterFormation(0.4, 0.3, 0.5)
+                    new CenterFormation(0.4, 0.3, 0.5),
+                    new RouteGroup(form, routeData)
                 }));
         }
         public List<Play> GetPlayPage(int index)

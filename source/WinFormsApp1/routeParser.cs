@@ -25,19 +25,13 @@ namespace WinFormsWithAspose
             this.page = page;
         }
 
-        public void initialize()
+        public RouteData initialize()
         {
 // string routeData = File.ReadAllText(routeDirectory);
             List<RouteData> routeTable = JsonConvert.DeserializeObject<DataTable<RouteData>>(File.ReadAllText(@"../../../routes.json")).table;
             var dataObject = routeTable.Find(x => x.name == routeName);
-            List<PointF> routeSteps = new List<PointF>();  
-            foreach (string s in dataObject.steps)
-            {
-                string[] splitStep = s.Split(',');
-                routeSteps.Add(new PointF(Convert.ToSingle(splitStep[0]), Convert.ToSingle(splitStep[1])));
-            }
-            Route r = new Route(x, y, "nothing", routeSteps);
-            r.Draw(page);
+            return dataObject;
+
         }
     }
 }

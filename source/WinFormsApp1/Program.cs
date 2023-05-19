@@ -59,7 +59,7 @@ namespace WinFormsApp1
                             }
                             else
                             {
-                                Console.WriteLine("Parcer failed to find LF or RT keywork!");
+                                Console.WriteLine("Parser failed to find LF or RT keyword!");
                                 return;
                             }
 
