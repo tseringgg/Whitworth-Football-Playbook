@@ -16,6 +16,11 @@
       "ending": "arrow"
     },
     {
+      "name": "Pivot",
+      "steps": [ ".5,.5", "-1,0" ],
+      "ending": "arrow"
+    },
+    {
       "name": "I/S Slant",
       "steps": [ "0,1", ".75,1" ],
       "ending": "arrow"
@@ -156,7 +161,7 @@
       "ending": "arrow"
     },
     {
-      "name": "S Comeback",
+      "name": "S. Comeback",
       "steps": [ "-1,2", "-.25,-.25" ],
       "ending": "arrow"
     },

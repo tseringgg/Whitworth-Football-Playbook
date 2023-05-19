@@ -46,49 +46,98 @@ namespace WinFormsApp1
                     playsheet.Plays.ForEach(x =>
                     {
                         category = new(x.categoryName);
-                        x.formations.ForEach(y =>
+
+                        for (int i = 0; i < x.formations.Count; i++)
                         {
                             string substr;
-                            if (y.Contains(" LT"))
+                            if (x.formations[i].Contains(" LT"))
                             {
-                                substr = y.Substring(0, y.IndexOf(" LT"));
+                                substr = x.formations[i].Substring(0, x.formations[i].IndexOf(" LT"));
                             }
-                            else if (y.Contains(" RT"))
+                            else if (x.formations[i].Contains(" RT"))
                             {
-                                substr = y.Substring(0, y.IndexOf(" RT"));
+                                substr = x.formations[i].Substring(0, x.formations[i].IndexOf(" RT"));
                             }
                             else
                             {
                                 Console.WriteLine("Parser failed to find LF or RT keyword!");
                                 return;
                             }
+                            List<string> playersTagged = new List<string>();
+                            List<string> conceptsInPlay = new List<string>();
+                            string[] playSubstr;
+                            playSubstr = x.tags[i].Split(" ");
+
+                            for(int k = 0; k < playSubstr.Length; k++)
+                            {
+                                for(int w = 0; w < playSubstr[k].Length; w++)
+                                {
+                                    if (playSubstr[k][w] == '&')
+                                    {
+                                        playersTagged.Add((playSubstr[k][w - 1].ToString()));
+                                        conceptsInPlay.Add(playSubstr[k + 1]);
+                                    }
+                                }
+                                if (playSubstr[k] == "BOTH")
+                                {
+                                    playersTagged.Add("Y");
+                                    playersTagged.Add("H");
+                                    conceptsInPlay.Add(playSubstr[k + 1]);
+                                    conceptsInPlay.Add(playSubstr[k + 1]);
+                                }
+                                else if(playSubstr[k] == "BUNNY")
+                                {
+                                    playersTagged.Add("Z");
+                                    playersTagged.Add("H");
+                                    conceptsInPlay.Add("BUNNY");
+                                }
+                                else if(playSubstr[k] == "DASH")
+                                {
+                                    playersTagged.Add("X");
+                                    conceptsInPlay.Add("DASH");
+                                }
+                                else if (playSubstr[k] == "X" || playSubstr[k] == "H" || playSubstr[k] == "Y" || playSubstr[k] == "Z")
+                                {
+                                    playersTagged.Add(playSubstr[k]);
+                                    conceptsInPlay.Add(playSubstr[k+1]);
+                                }
+                            }
+
+                            List<string> playerAssignments = new List<string>();
+                            List<string> playerRoutes = new List<string>();
+                            ConceptParser cp;
+
+                            for (int c = 0; c < conceptsInPlay.Count; c++)
+                            {
+                                cp = new ConceptParser(conceptsInPlay[c], playersTagged[c]);
+                                cp.assignRoutes().ForEach(x => playerRoutes.Add(x));
+                                cp.assignPlayer().ForEach(x => playerAssignments.Add(x));
+                            }
+
+
 
                             int len = substr.Split(" ").Length;
-                            for (int i = 0; i < len; i++)
+                            for (int j = 0; j < len; j++)
                             {
                                 // see if substring exists in formations table
                                 Formation form = formationsTable.Find(f => (f.name.ToUpper() == substr.ToUpper()));
                                 if (form != null)
                                 {
-                                    category.Add(form, new List<RouteData>()
+                                    category.Add(form.name + " " + form.side + x.tags[i] ,form, new List<RouteData>()
                                     {
-                                        new routeParser("Slant").initialize(),
-                                        new routeParser("Slant").initialize(),
-                                        new routeParser("Slant").initialize(),
-                                        new routeParser("Slant").initialize(),
-                                    }, new List<string>()
-                                    {
-                                        "x",
-                                        "y",
-                                        "h",
-                                        "z"
-                                    });
+                                        new routeParser(playerRoutes[0]).initialize(),
+                                        new routeParser(playerRoutes[1]).initialize(),
+                                        new routeParser(playerRoutes[2]).initialize(),
+                                        new routeParser(playerRoutes[3]).initialize(),
+                                    }, playerAssignments);
                                     break;
                                 }
                                 //
-                                substr = substr.Substring(substr.IndexOf(" ")+1);
+                                substr = substr.Substring(substr.IndexOf(" ") + 1);
                             }
-                        });
+                        }
+
+                        
                         categories.Add(category);
                     });
 

@@ -76,7 +76,7 @@ namespace WinFormsWithAspose
                     int prevIndex = 1;
 
                     // Adds tags to list
-                    string temp = singlePlay.Substring(prevIndex, k - 1 - prevIndex);
+                    string temp = singlePlay.Substring(prevIndex, k - prevIndex);
                     Plays[Plays.Count - 1].tags.Add(temp);
 
                     prevIndex = k + 2;
@@ -84,7 +84,7 @@ namespace WinFormsWithAspose
                     k = singlePlay.IndexOf("\t", prevIndex);
 
                     // Adds tags to list
-                    Plays[Plays.Count - 1].personell.Add(singlePlay.Substring(prevIndex, k - 1 - prevIndex));
+                    Plays[Plays.Count - 1].personell.Add(singlePlay.Substring(prevIndex, k - prevIndex));
 
                     prevIndex = k + 2;
 

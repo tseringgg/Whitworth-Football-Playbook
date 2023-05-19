@@ -21,7 +21,7 @@
             Name = name;
 
         }
-        public void Add(Formation form, List<RouteData> routeData, List<string> players)
+        public void Add(string title, Formation form, List<RouteData> routeData, List<string> players)
         {
             // find first List that doesn't have 4 plays
             int index = 0;
@@ -42,7 +42,7 @@
             // Add to it
             PaginatedPlays[index].Add(new Play(new List<IDiagramGroup>
             {
-                new SkillPlayerGroup(form.name + " " + form.side, 0.4, 0.3)
+                new SkillPlayerGroup(title, 0.4, 0.3)
                     .Add("X", form.x_x, form.x_y)
                     .Add("Y", form.y_x, form.y_y)
                     .Add("Z", form.z_x, form.z_y)

@@ -9,7 +9,7 @@
       "routes": [ "Sail", "Work It" ]
     },
     {
-      "name": "Qk Out",
+      "name": "Qk",
       "routes": [ "QK Out", "Brady", "Brady", "Brady" ]
     },
     {
@@ -54,7 +54,7 @@
     },
     {
       "name": "Tiger",
-      "routes": [ "S. Comeback", "Sink" ]
+      "routes": [ "Comeback", "Sink" ]
     },
     {
       "name": "Dash",
@@ -78,7 +78,7 @@
     },
     {
       "name": "Shallow",
-      "routes": [ "Shallow" ]
+      "routes": [ "Shallow", "Brady" ]
     },
     {
       "name": "Heat",
@@ -95,6 +95,10 @@
     {
       "name": "Hiccup",
       "routes": [ "Hiccup", "Brady", "Grab Over", "Flat" ]
+    },
+    {
+      "name": "Chase",
+      "routes": ["Chase", "Bench"]
     }
 
   ]

@@ -30,12 +30,12 @@ namespace WinFormsWithAspose
             points.Add(new PointF((float)X, (float)Y));
             for (int i = 0; i < Motions.Count; i++)
             {
-                points.Add(new((float)points[i].X + (float)Motions[i].X, (float)points[i].Y + (float)Motions[i].Y));
+                points.Add(new((float)(points[i].X) + (float)(Motions[i].X)*.5f, (float)(points[i].Y) + (float)((Motions[i].Y)*.5f)));
             }
 
             for (int i = 0; i < points.Count - 1; i++)
             {
-                page.DrawLine(points[i].X, points[i].Y, points[i + 1].X, points[i + 1].Y);
+                page.DrawLine(points[i].X , points[i].Y , points[i + 1].X , points[i + 1].Y);
             }
 
             switch (Ending)

@@ -33,7 +33,7 @@ namespace WinFormsWithAspose
         public void Draw(Page page)
         {
 
-            routeParser r = new routeParser("Slant", "weener", Convert.ToSingle(X), Convert.ToSingle(Y), page);
+            routeParser r = new routeParser("Slant");
             r.initialize();
             foreach (IDrawable drawable in drawables)
             {
