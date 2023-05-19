@@ -86,16 +86,16 @@
     },
     {
       "name": "Climb",
-      "routes": [ "Dover", "In", "Work It", "Brady" ]
+      "routes": [ "Dover", "Work It", "Brady", "In" ]
     },
     {
       "name": "Rebel",
-      "routes": [ "Hash", "Work It", "Bench", "Brady" ]
+      "routes": [ "Hash", "Bench", "Brady", "Work It" ]
     },
     {
       "name": "Hiccup",
-      "routes": [ "Hiccup", "Brady", "Flat", "Grab Over" ]
-    },
+      "routes": [ "Hiccup", "Brady", "Grab Over", "Flat" ]
+    }
 
   ]
 }
