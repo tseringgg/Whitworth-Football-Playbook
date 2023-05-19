@@ -8,20 +8,27 @@ namespace WinFormsWithAspose
     {
         public Formation form;
         public List<RouteData> routeData;
+        public List<string> players;
 
         public List<IDrawable> drawables { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
         public double X { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
         public double Y { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
         public double Scale { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 
-        public RouteGroup(Formation form, List<RouteData> routeData)
+        public RouteGroup(Formation form, List<RouteData> routeData, List<string> players)
         {
             this.form = form;
             this.routeData = routeData;
+            this.players = players;
         }
 
         public void Draw(Page page)
         {
+            for (int i = 0; i < players.Count; i++)
+            {
+                
+            }
+
             List<PointF> routeSteps = new List<PointF>();
             foreach (string s in dataObject.steps)
             {
