@@ -14,22 +14,21 @@ namespace WinFormsWithAspose
         public float x;
         public float y;
         public string routeName;
-        public string routeDirectory;
+        
         public Page page;
-        public routeParser(string routeName, string routeDirectory, float x, float y, Page page)
+        public routeParser(string routeName)
         {
-            this.x = x;
-            this.y = y;
             this.routeName = routeName;
-            this.routeDirectory = routeDirectory;
-            this.page = page;
         }
 
         public RouteData initialize()
         {
-// string routeData = File.ReadAllText(routeDirectory);
+
             List<RouteData> routeTable = JsonConvert.DeserializeObject<DataTable<RouteData>>(File.ReadAllText(@"../../../routes.json")).table;
             var dataObject = routeTable.Find(x => x.name == routeName);
+
+
+
             return dataObject;
 
         }
