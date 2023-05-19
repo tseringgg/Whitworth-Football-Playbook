@@ -17,15 +17,18 @@ namespace WinFormsWithAspose
         public double Scale { get; set; }
         public List<PointF> Motions { get; set; }
         public string Ending { get; set; }
-        public Route(double x, double y, string ending, List<PointF> motions)
+        public string Name { get; set; }
+        public Route(string name, double x, double y, string ending, List<PointF> motions)
         {
             this.X = x;
+            Name = name;
             this.Y = y;
             Motions = motions;
         }
 
         public void Draw(Page page)
         {
+            page.AddText(X+0.4, Y-0.25, 1, Height, Name);
             List<PointF> points = new List<PointF>();
             points.Add(new PointF((float)X, (float)Y));
             for (int i = 0; i < Motions.Count; i++)

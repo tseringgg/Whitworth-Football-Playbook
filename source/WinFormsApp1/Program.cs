@@ -63,40 +63,11 @@ namespace WinFormsApp1
                                 Console.WriteLine("Parser failed to find LF or RT keyword!");
                                 return;
                             }
-                            List<string> playersTagged = new List<string>();
-                            List<string> conceptsInPlay = new List<string>();
-                            string[] playSubstr;
-                            playSubstr = x.tags[i].Split(" ");
+                            List<string> playersTagged;
+                            List<string> conceptsInPlay;
 
-                            for(int k = 0; k < playSubstr.Length; k++)
-                            {
-                                for(int w = 0; w < playSubstr[k].Length; w++)
-                                {
-                                    if (playSubstr[k][w] == '&')
-                                    {
-                                        playersTagged.Add((playSubstr[k][w - 1].ToString()));
-                                        conceptsInPlay.Add(playSubstr[k + 1]);
-                                    }
-                                }
-                                if (playSubstr[k] == "BOTH")
-                                {
-                                    playersTagged.Add("Y");
-                                    playersTagged.Add("H");
-                                    conceptsInPlay.Add(playSubstr[k + 1]);
-                                    conceptsInPlay.Add(playSubstr[k + 1]);
-                                }
-                                
-                                else if(playSubstr[k] == "DASH")
-                                {
-                                    playersTagged.Add("X");
-                                    conceptsInPlay.Add("DASH");
-                                }
-                                else if (playSubstr[k] == "X" || playSubstr[k] == "H" || playSubstr[k] == "Y" || playSubstr[k] == "Z")
-                                {
-                                    playersTagged.Add(playSubstr[k]);
-                                    conceptsInPlay.Add(playSubstr[k+1]);
-                                }
-                            }
+                            TagsParser tp = new(x.tags[i].Split(" "));
+                            tp.Process(out playersTagged, out conceptsInPlay);
 
                             List<string> playerAssignments = new List<string>();
                             List<string> playerRoutes = new List<string>();
@@ -118,12 +89,12 @@ namespace WinFormsApp1
                                 Formation form = formationsTable.Find(f => (f.name.ToUpper() == substr.ToUpper()));
                                 if (form != null)
                                 {
-                                    category.Add(form.name + " " + form.side + x.tags[i] ,form, new List<RouteData>()
+                                    category.Add(form.name + " " + form.side + " " + x.tags[i] ,form, new List<RouteData>()
                                     {
-                                        new routeParser(playerRoutes[0]).initialize(),
-                                        new routeParser(playerRoutes[1]).initialize(),
-                                        new routeParser(playerRoutes[2]).initialize(),
-                                        new routeParser(playerRoutes[3]).initialize(),
+                                        new RouteParser(playerRoutes[0]).Parse(),
+                                        new RouteParser(playerRoutes[1]).Parse(),
+                                        new RouteParser(playerRoutes[2]).Parse(),
+                                        new RouteParser(playerRoutes[3]).Parse(),
                                     }, playerAssignments);
                                     break;
                                 }
@@ -135,16 +106,6 @@ namespace WinFormsApp1
                         categories.Add(category);
                     });
 
-                    // TODO: 1. Need parser code here to add plays to different categories.
-                    //       2. I recommend storing them as a list of categories (List<Category>)
-                    // Currently, this code adds every formation in the table to just one Category object
-                    // * * * * * *
-                    //Category category = new();
-                    foreach(Formation formation in formationsTable)
-                    {
-                        //category.Add(formation); 
-                    }
-                    // * * * * * *
 
 
                     Diagram diagram = new();
@@ -172,11 +133,6 @@ namespace WinFormsApp1
                     // removes empty page that gets generated at the end
                     diagram.Pages.Remove(diagram.Pages[diagram.Pages.Count-1]);
                     diagram.ExportDiagram("..\\");
-
-                    // ignore for now
-                    //ApplicationConfiguration.Initialize();
-                    //Application.Run(new Form1());
-
 
 
                     //Set up message box to respond to the user

@@ -9,19 +9,19 @@ using PointF = System.Drawing.PointF;
 
 namespace WinFormsWithAspose
 {
-    internal class routeParser
+    internal class RouteParser
     {
         public float x;
         public float y;
         public string routeName;
         
         public Page page;
-        public routeParser(string routeName)
+        public RouteParser(string routeName)
         {
             this.routeName = routeName;
         }
 
-        public RouteData initialize()
+        public RouteData Parse()
         {
 
             List<RouteData> routeTable = JsonConvert.DeserializeObject<DataTable<RouteData>>(File.ReadAllText(@"../../../routes.json")).table;
