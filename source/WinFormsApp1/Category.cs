@@ -21,7 +21,7 @@
             Name = name;
 
         }
-        public void Add(Formation form, List<RouteData> routeData)
+        public void Add(Formation form, List<RouteData> routeData, List<string> players)
         {
             // find first List that doesn't have 4 plays
             int index = 0;
@@ -43,15 +43,15 @@
             PaginatedPlays[index].Add(new Play(new List<IDiagramGroup>
             {
                 new SkillPlayerGroup(form.name + " " + form.side, 0.4, 0.3)
-                .Add("X", form.x_x, form.x_y)
-                .Add("Y", form.y_x, form.y_y)
-                .Add("Z", form.z_x, form.z_y)
-                .Add("Q", form.q_x, form.q_y)
-                .Add("T", form.t_x, form.t_y)
-                .Add("H", form.h_x, form.h_y),
-                    new CenterFormation(0.4, 0.3, 0.5),
-                    new RouteGroup(form, routeData)
-                }));
+                    .Add("X", form.x_x, form.x_y)
+                    .Add("Y", form.y_x, form.y_y)
+                    .Add("Z", form.z_x, form.z_y)
+                    .Add("Q", form.q_x, form.q_y)
+                    .Add("T", form.t_x, form.t_y)
+                    .Add("H", form.h_x, form.h_y),
+                new CenterFormation(0.4, 0.3, 0.5),
+                new RouteGroup(form, routeData, players)
+            }));
         }
         public List<Play> GetPlayPage(int index)
         {

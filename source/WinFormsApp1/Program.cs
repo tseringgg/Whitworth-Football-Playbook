@@ -70,7 +70,19 @@ namespace WinFormsApp1
                                 Formation form = formationsTable.Find(f => (f.name.ToUpper() == substr.ToUpper()));
                                 if (form != null)
                                 {
-                                    category.Add(form);
+                                    category.Add(form, new List<RouteData>()
+                                    {
+                                        new routeParser("Slant").initialize(),
+                                        new routeParser("Slant").initialize(),
+                                        new routeParser("Slant").initialize(),
+                                        new routeParser("Slant").initialize(),
+                                    }, new List<string>()
+                                    {
+                                        "x",
+                                        "y",
+                                        "h",
+                                        "z"
+                                    });
                                     break;
                                 }
                                 //

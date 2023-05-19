@@ -16,7 +16,7 @@ namespace WinFormsWithAspose
         public string routeName;
         public string routeDirectory;
         public Page page;
-        public routeParser(string routeName, string routeDirectory, float x, float y, Page page)
+        public routeParser(string routeName)
         {
             this.x = x;
             this.y = y;
