@@ -31,16 +31,16 @@ namespace WinFormsWithAspose
                 switch (players[i])
                 {
                     case "X":
-                        drawables.Add(new Route(form.x_x, form.x_y, "", StringsToSteps(routeData[i])));
+                        drawables.Add(new Route(form.x_x, form.x_y, "", StringsToSteps(form.x_x, routeData[i])));
                         break;
                     case "Y":
-                        drawables.Add(new Route(form.y_x, form.y_y, "", StringsToSteps(routeData[i])));
+                        drawables.Add(new Route(form.y_x, form.y_y, "", StringsToSteps(form.y_x, routeData[i])));
                         break;
                     case "H":
-                        drawables.Add(new Route(form.h_x, form.h_y, "", StringsToSteps(routeData[i])));
+                        drawables.Add(new Route(form.h_x, form.h_y, "", StringsToSteps(form.h_x, routeData[i])));
                         break;
                     case "Z":
-                        drawables.Add(new Route(form.z_x, form.z_y, "", StringsToSteps(routeData[i])));
+                        drawables.Add(new Route(form.z_x, form.z_y, "", StringsToSteps(form.z_x, routeData[i])));
                         break;
                 }
             }
@@ -60,13 +60,21 @@ namespace WinFormsWithAspose
             }
         }
 
-        private List<PointF> StringsToSteps(RouteData r)
+        private List<PointF> StringsToSteps(double x, RouteData r)
         {
             List<PointF> routeSteps = new List<PointF>();
             foreach (string s in r.steps)
             {
                 string[] splitStep = s.Split(',');
-                routeSteps.Add(new PointF(Convert.ToSingle(splitStep[0]), Convert.ToSingle(splitStep[1])));
+                if(x > 0)
+                {
+                    routeSteps.Add(new PointF(-(Convert.ToSingle(splitStep[0])), Convert.ToSingle(splitStep[1])));
+                }
+                else
+                {
+                    routeSteps.Add(new PointF(Convert.ToSingle(splitStep[0]), Convert.ToSingle(splitStep[1])));
+                }
+                
             }
             return routeSteps;
         }

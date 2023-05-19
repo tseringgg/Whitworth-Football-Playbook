@@ -85,12 +85,7 @@ namespace WinFormsApp1
                                     conceptsInPlay.Add(playSubstr[k + 1]);
                                     conceptsInPlay.Add(playSubstr[k + 1]);
                                 }
-                                else if(playSubstr[k] == "BUNNY")
-                                {
-                                    playersTagged.Add("Z");
-                                    playersTagged.Add("H");
-                                    conceptsInPlay.Add("BUNNY");
-                                }
+                                
                                 else if(playSubstr[k] == "DASH")
                                 {
                                     playersTagged.Add("X");
@@ -132,7 +127,6 @@ namespace WinFormsApp1
                                     }, playerAssignments);
                                     break;
                                 }
-                                //
                                 substr = substr.Substring(substr.IndexOf(" ") + 1);
                             }
                         }

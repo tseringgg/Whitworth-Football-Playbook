@@ -24,15 +24,11 @@ namespace WinFormsWithAspose
             List<ConceptData> conceptTable = JsonConvert.DeserializeObject<DataTable<ConceptData>>(File.ReadAllText(@"../../../concepts.json")).table;
             var x = conceptTable.Find(y => y.name.ToUpper() == name.ToUpper());
 
-            if (x.routes.Count == 2 && taggedPlayer == "H")
+            
+            if (x.routes.Count == 2 && taggedPlayer == "H" && name == "SHALLOW")
             {
                 assignedRoutes.Add(taggedPlayer);
-                assignedRoutes.Add("X");
-            }
-            else if (x.routes.Count == 2 && taggedPlayer == "Y" && name == "FLAT")
-            {
-                assignedRoutes.Add(taggedPlayer);
-                assignedRoutes.Add("X");
+                assignedRoutes.Add("Y");
             }
             else if (x.routes.Count == 2 && name == "DASH")
             {
@@ -48,11 +44,6 @@ namespace WinFormsWithAspose
             {
                 assignedRoutes.Add(taggedPlayer);
                 assignedRoutes.Add("Z");
-            }
-            else if (x.routes.Count == 2 && name == "BUNNY")
-            {
-                assignedRoutes.Add("Z");
-                assignedRoutes.Add("H");
             }
             else if (x.routes.Count == 2 && taggedPlayer == "Z" && name == "TRAIL")
             {
@@ -84,13 +75,19 @@ namespace WinFormsWithAspose
                 assignedRoutes.Add(taggedPlayer);
                 assignedRoutes.Add("Y");
             }
+            
+            else if (x.routes.Count == 2 && taggedPlayer == "H")
+            {
+                assignedRoutes.Add(taggedPlayer);
+                assignedRoutes.Add("X");
+            }
             else if (x.routes.Count == 3 && taggedPlayer == "H")
             {
                 assignedRoutes.Add(taggedPlayer);
                 assignedRoutes.Add("Y");
                 assignedRoutes.Add("Z");
             }
-            else if (x.routes.Count == 3 && taggedPlayer == "H")
+            else if (x.routes.Count == 3 && taggedPlayer == "Y")
             {
                 assignedRoutes.Add(taggedPlayer);
                 assignedRoutes.Add("H");
@@ -103,6 +100,13 @@ namespace WinFormsWithAspose
                 assignedRoutes.Add("X");
                 assignedRoutes.Add("Y");
             }
+            else if (x.routes.Count == 4 && taggedPlayer == "Y")
+            {
+                assignedRoutes.Add(taggedPlayer);
+                assignedRoutes.Add("H");
+                assignedRoutes.Add("X");
+                assignedRoutes.Add("Z");
+            }
             else if (x.routes.Count == 4 && taggedPlayer == "H")
             {
                 assignedRoutes.Add(taggedPlayer);
@@ -110,6 +114,18 @@ namespace WinFormsWithAspose
                 assignedRoutes.Add("Y");
                 assignedRoutes.Add("Z");
             }
+            else if (x.routes.Count == 4 && taggedPlayer == "X")
+            {
+                assignedRoutes.Add(taggedPlayer);
+                assignedRoutes.Add("H");
+                assignedRoutes.Add("Y");
+                assignedRoutes.Add("Z");
+            }
+            else if (x.routes.Count == 1)
+            {
+                assignedRoutes.Add(taggedPlayer);
+            }
+           
 
             return assignedRoutes;
         }

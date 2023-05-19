@@ -27,8 +27,6 @@ namespace WinFormsWithAspose
             List<RouteData> routeTable = JsonConvert.DeserializeObject<DataTable<RouteData>>(File.ReadAllText(@"../../../routes.json")).table;
             var dataObject = routeTable.Find(x => x.name == routeName);
 
-
-
             return dataObject;
 
         }

@@ -10,7 +10,7 @@
     },
     {
       "name": "Qk",
-      "routes": [ "QK Out", "Brady", "Brady", "Brady" ]
+      "routes": [ "Qk Out", "Brady", "Brady", "Brady" ]
     },
     {
       "name": "Oregon",
@@ -65,12 +65,8 @@
       "routes": [ "Pylon", "Flood" ]
     },
     {
-      "name": "Bunny",
-      "routes": [ "Corner", "Pivot" ]
-    },
-    {
       "name": "Flat",
-      "routes": [ "Flat", "Over" ]
+      "routes": [ "Flat", "Pivot", "Over", "Corner" ]
     },
     {
       "name": "Trail",
@@ -90,7 +86,7 @@
     },
     {
       "name": "Rebel",
-      "routes": [ "Hash", "Bench", "Brady", "Work It" ]
+      "routes": [ "Hash", "Work It", "Brady", "Bench" ]
     },
     {
       "name": "Hiccup",
