@@ -2,7 +2,7 @@
 
 namespace WinFormsWithAspose
 {
-    public class Play
+    public class Play // holds IDiagramGroups so that their positions line up
     {
         public List<IDiagramGroup> Groups;
         public double X, Y;
@@ -14,7 +14,7 @@ namespace WinFormsWithAspose
             Scale = 1;
             this.Groups = groups;
         }
-        public void Draw(Page page)
+        public void Draw(Page page) // set the groups to the same position and scale
         {
             foreach (IDiagramGroup group in Groups)
             {

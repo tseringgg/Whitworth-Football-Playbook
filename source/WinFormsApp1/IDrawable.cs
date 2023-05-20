@@ -2,7 +2,7 @@
 
 namespace WinFormsWithAspose
 {
-    public interface IDrawable
+    public interface IDrawable // can be drawn to a page & have its position adjusted externally
     {
         public void Draw(Page page);
         public double X { get; set; }

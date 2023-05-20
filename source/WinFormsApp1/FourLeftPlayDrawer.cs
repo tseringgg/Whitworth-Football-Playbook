@@ -20,9 +20,10 @@ namespace WinFormsWithAspose
         }
         public void Draw()
         {
+            // get the dimensions of the page
             double height = this.page.PageSheet.PageProps.PageHeight.Value;
             double width = this.page.PageSheet.PageProps.PageWidth.Value;
-            double margin = 0.5;
+            double margin = 0.5; // how close the plays are to the edge of page
             double x, y;
             double heightOffset = -1;
 

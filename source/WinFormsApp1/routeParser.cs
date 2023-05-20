@@ -9,7 +9,7 @@ using PointF = System.Drawing.PointF;
 
 namespace WinFormsWithAspose
 {
-    internal class RouteParser
+    internal class RouteParser // for retrieving the route data from the json
     {
         public float x;
         public float y;

@@ -20,7 +20,7 @@ namespace WinFormsWithAspose
             Height = height;
             Space = space;
             Scale = 1;
-            drawables = new List<IDrawable>()
+            drawables = new List<IDrawable>() // add the shapes to the formation
             {
                 new TextBubble("", X-Space, Y, Width, Height),
                 new TextBubble("", X-2*Space, Y, Width, Height),
@@ -32,9 +32,7 @@ namespace WinFormsWithAspose
 
         public void Draw(Page page)
         {
-
-            RouteParser r = new RouteParser("Slant");
-            r.Parse();
+            // center formation is drawn the same across plays
             foreach (IDrawable drawable in drawables)
             {
                 drawable.Scale = Scale;

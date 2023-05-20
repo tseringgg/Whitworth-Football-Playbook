@@ -2,7 +2,7 @@
 
 namespace WinFormsWithAspose
 {
-    public class SkillPlayerGroup : IDiagramGroup
+    public class SkillPlayerGroup : IDiagramGroup // the group of skill players in a play
     {
         public List<IDrawable> drawables { get; set; }
         public double X { get; set; }
@@ -29,8 +29,8 @@ namespace WinFormsWithAspose
 
         public void Draw(Page page)
         {
-            page.AddText(X+0.5, Y+1, Width+1, Height, PlayTitle);
-            foreach (TextBubble drawable in drawables) 
+            page.AddText(X+0.5, Y+1, Width+1, Height, PlayTitle); // title of the play
+            foreach (TextBubble drawable in drawables) // skill players drawn to the same coordinates and scale
             {
                 drawable.Scale = Scale;
                 drawable.X *= Scale;

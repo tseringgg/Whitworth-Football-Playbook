@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace WinFormsWithAspose
 {
-    public class Formation
+    public class Formation // class for holding formation data
     {
         //each player has an x and y coordinate
         public string? name;

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace WinFormsWithAspose
 {
-    public class Square : IDrawable
+    public class Square : IDrawable // shape for the center formation
     {
         public double X { get; set; }
         public double Y { get; set; }

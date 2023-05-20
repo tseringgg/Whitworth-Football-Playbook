@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace WinFormsWithAspose
 {
-    public class TextBubble : IDrawable
+    public class TextBubble : IDrawable // for drawing an ellipse with a label inside
     {
         public string Label { get; set; }
         public double X { get; set; }

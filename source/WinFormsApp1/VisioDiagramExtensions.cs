@@ -3,7 +3,7 @@ using Aspose.Diagram.Saving;
 
 namespace WinFormsWithAspose
 {
-    public static class VisioDiagramExtensions
+    public static class VisioDiagramExtensions // handling diagram being exported to a pdf file and a visio file format
     {
         public static void ExportDiagram(this Diagram diagram, string dataDir)
         {

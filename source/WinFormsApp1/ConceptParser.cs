@@ -136,8 +136,6 @@ namespace WinFormsWithAspose
             {
                 assignedRoutes.Add(taggedPlayer);
             }
-           
-
             return assignedRoutes;
         }
 
@@ -158,10 +156,7 @@ namespace WinFormsWithAspose
                     }
                 }
             }
-
             return routes;
-
-
         }
 
     }

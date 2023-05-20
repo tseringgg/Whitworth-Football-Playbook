@@ -4,7 +4,7 @@ using PointF = System.Drawing.PointF;
 
 namespace WinFormsWithAspose
 {
-    public class RouteGroup : IDiagramGroup
+    public class RouteGroup : IDiagramGroup // holding routes that will be drawn to the same play
     {
         public Formation form;
         public List<RouteData> routeData;

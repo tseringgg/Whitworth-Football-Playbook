@@ -2,7 +2,7 @@
 
 namespace WinFormsWithAspose
 {
-    public interface IDiagramGroup
+    public interface IDiagramGroup // for a group of drawables of the same type
     {
         public List<IDrawable> drawables { get; set; }
         public double X { get; set; }

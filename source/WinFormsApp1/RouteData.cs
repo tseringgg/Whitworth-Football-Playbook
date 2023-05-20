@@ -1,6 +1,6 @@
 ﻿namespace WinFormsWithAspose
 {
-    public class RouteData
+    public class RouteData // container for holding route data
     {
         public string name;
         public List<string> steps;

@@ -3,7 +3,7 @@
     public class Category
     {
         public string Name { get; set; }
-        private List<List<Play>> PaginatedPlays;
+        private List<List<Play>> PaginatedPlays; // List of play "pages" where there are 4 plays to a list
 
         public int Count 
         {
@@ -30,7 +30,7 @@
                 index = i;
                 if (PaginatedPlays[i].Count < 4)
                 {
-                    break;
+                    break; // skip adding another list
                 }
                 else if (PaginatedPlays[i].Count == 4 && i == PaginatedPlays.Count-1)
                 {
@@ -42,7 +42,7 @@
             // Add to it
             PaginatedPlays[index].Add(new Play(new List<IDiagramGroup>
             {
-                new SkillPlayerGroup(title, 0.4, 0.3)
+                new SkillPlayerGroup(title, 0.4, 0.3) // add groups to be drawn
                     .Add("X", form.x_x, form.x_y)
                     .Add("Y", form.y_x, form.y_y)
                     .Add("Z", form.z_x, form.z_y)
