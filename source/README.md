@@ -1,92 +1,34 @@
-# WU Football Visio Diagrams
+Project Name: Whitworth Football Play Diagram Generator
 
+Description:
+- This project is an automated computer software program that allows Whitworth football to be more time efficient and productive. This piece of software creates diagrams of weekly plays that  Whitworth football will use against its opponents. It will eliminate the need of Coaches to individually create each play from scratch each week and allow that time to be spent on something else giving Whitworth football a possible game winning advantage. 
 
+Specifics on the Process:
+- Each play that is going to be ran is put onto a call sheet. The call sheet is a piece of paper that the offensive coordinator holds and gives them all of their plays to be called at any individual moment. The call sheets are put into an excel doc that way they can be changed if needed. Once the call sheet is finished, it is on the coaches to then start plugging away on the diagramming of the plays. These playbook drawings are done through a graphic design software called ‘Visio’. Visio allows us to be able to be able to add shapes and lines in addition to text boxes. The text box at the top of the sheet holds each play name, while the shapes and lines allow us to diagram the specifics of each play. Specifics may include the given formation, concepts, blocking scheme, route concept, and play progression listings. 
 
-## Getting started
+The Problem Worth Solving:
+- As mentioned, the time spent drawing up each individual play for the week takes a lot of time, around 10 hours per week to be exact. With time being extremely limited and valuable during any given game week for a coach, a way to speed up this process would be extremely valuable. It would give much more free time to all coaches on staff to be able to dive deeper into their opponents and continue to study for weak points in an opposing defense. This work is currently done through manual labor and precise mouse-clicking. If there were to be a way to automate this process by allowing a computer software to create the diagrams for us, much time would be freed for the coaches. This added time in the day could be used to host player meetings, study sessions, recruiting opportunities, and maybe even allow a coach to head home a tad early once in a while. 
 
-To make it easy for you to get started with GitLab, here's a list of recommended next steps.
+Obstacles Encountered / Solutions:
+- Water mark
+    - Small enough to work around & also can delete watermark when pdf is transferred to Visio
+- Lack of access to frameworks and packages to work with
+    - Took a lot of our time to research to find something we can utilize
+    - Found only one option that would work for our project, but the entire framework included many services so it was expensive ($5,000)
+- Lack access to visio
+    - We didn't have access to the Visio services as students here so we had to work with our client to get work within Visio on desktops and on Whitworth Football's account
+- Database issues
+    - Figure out how to store our data - Didn't want to pay for a cloud service to store data
+        - Considered MySQL and mdf files
+        - Realizes our data wouldn't change for the most part so JSON files with all the would suffice
 
-Already a pro? Just edit this README.md and make it your own. Want to make it easy? [Use the template at the bottom](#editing-this-readme)!
+Successes:
+- Designed extensively - testable and dynamic
+    - In the future, can add objects or other features to the play easily
 
-## Add your files
-
-- [ ] [Create](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#create-a-file) or [upload](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#upload-a-file) files
-- [ ] [Add files using the command line](https://docs.gitlab.com/ee/gitlab-basics/add-file.html#add-a-file-using-the-command-line) or push an existing Git repository with the following command:
-
-```
-cd existing_repo
-git remote add origin https://whitgit.whitworth.edu/tngoche23/wu-football-visio-diagrams.git
-git branch -M main
-git push -uf origin main
-```
-
-## Integrate with your tools
-
-- [ ] [Set up project integrations](https://whitgit.whitworth.edu/tngoche23/wu-football-visio-diagrams/-/settings/integrations)
-
-## Collaborate with your team
-
-- [ ] [Invite team members and collaborators](https://docs.gitlab.com/ee/user/project/members/)
-- [ ] [Create a new merge request](https://docs.gitlab.com/ee/user/project/merge_requests/creating_merge_requests.html)
-- [ ] [Automatically close issues from merge requests](https://docs.gitlab.com/ee/user/project/issues/managing_issues.html#closing-issues-automatically)
-- [ ] [Enable merge request approvals](https://docs.gitlab.com/ee/user/project/merge_requests/approvals/)
-- [ ] [Automatically merge when pipeline succeeds](https://docs.gitlab.com/ee/user/project/merge_requests/merge_when_pipeline_succeeds.html)
-
-## Test and Deploy
-
-Use the built-in continuous integration in GitLab.
-
-- [ ] [Get started with GitLab CI/CD](https://docs.gitlab.com/ee/ci/quick_start/index.html)
-- [ ] [Analyze your code for known vulnerabilities with Static Application Security Testing(SAST)](https://docs.gitlab.com/ee/user/application_security/sast/)
-- [ ] [Deploy to Kubernetes, Amazon EC2, or Amazon ECS using Auto Deploy](https://docs.gitlab.com/ee/topics/autodevops/requirements.html)
-- [ ] [Use pull-based deployments for improved Kubernetes management](https://docs.gitlab.com/ee/user/clusters/agent/)
-- [ ] [Set up protected environments](https://docs.gitlab.com/ee/ci/environments/protected_environments.html)
-
-***
-
-# Editing this README
-
-When you're ready to make this README your own, just edit this file and use the handy template below (or feel free to structure it however you want - this is just a starting point!). Thank you to [makeareadme.com](https://www.makeareadme.com/) for this template.
-
-## Suggestions for a good README
-Every project is different, so consider which of these sections apply to yours. The sections used in the template are suggestions for most open source projects. Also keep in mind that while a README can be too long and detailed, too long is better than too short. If you think your README is too long, consider utilizing another form of documentation rather than cutting out information.
-
-## Name
-Choose a self-explaining name for your project.
-
-## Description
-Let people know what your project can do specifically. Provide context and add a link to any reference visitors might be unfamiliar with. A list of Features or a Background subsection can also be added here. If there are alternatives to your project, this is a good place to list differentiating factors.
-
-## Badges
-On some READMEs, you may see small images that convey metadata, such as whether or not all the tests are passing for the project. You can use Shields to add some to your README. Many services also have instructions for adding a badge.
-
-## Visuals
-Depending on what you are making, it can be a good idea to include screenshots or even a video (you'll frequently see GIFs rather than actual videos). Tools like ttygif can help, but check out Asciinema for a more sophisticated method.
-
-## Installation
-Within a particular ecosystem, there may be a common way of installing things, such as using Yarn, NuGet, or Homebrew. However, consider the possibility that whoever is reading your README is a novice and would like more guidance. Listing specific steps helps remove ambiguity and gets people to using your project as quickly as possible. If it only runs in a specific context like a particular programming language version or operating system or has dependencies that have to be installed manually, also add a Requirements subsection.
-
-## Usage
-Use examples liberally, and show the expected output if you can. It's helpful to have inline the smallest example of usage that you can demonstrate, while providing links to more sophisticated examples if they are too long to reasonably include in the README.
-
-## Support
-Tell people where they can go to for help. It can be any combination of an issue tracker, a chat room, an email address, etc.
-
-## Roadmap
-If you have ideas for releases in the future, it is a good idea to list them in the README.
-
-## Contributing
-State if you are open to contributions and what your requirements are for accepting them.
-
-For people who want to make changes to your project, it's helpful to have some documentation on how to get started. Perhaps there is a script that they should run or some environment variables that they need to set. Make these steps explicit. These instructions could also be useful to your future self.
-
-You can also document commands to lint the code or run tests. These steps help to ensure high code quality and reduce the likelihood that the changes inadvertently break something. Having instructions for running tests is especially helpful if it requires external setup, such as starting a Selenium server for testing in a browser.
-
-## Authors and acknowledgment
-Show your appreciation to those who have contributed to the project.
-
-## License
-For open source projects, say how it is licensed.
-
-## Project status
-If you have run out of energy or time for your project, put a note at the top of the README saying that development has slowed down or stopped completely. Someone may choose to fork your project or volunteer to step in as a maintainer or owner, allowing your project to keep going. You can also make an explicit request for maintainers.
+Backlog Links:
+Link for backlog: https://trello.com/b/Eajb3fTI/jamm-product-backlog
+Link for Sprint 1 Backlog: https://trello.com/b/6Dgn3UIp/sprint-1-backlog
+Link for Sprint 2 Backlog: https://trello.com/b/qVRvLjzH/jamm-sprint-2-backlog
+Link for Sprint 3 Backlog: https://trello.com/b/HnXIOMcp/jamm-sprint-3-backlog
+Link for Sprint 4 Backlog: https://trello.com/b/j7QBUeRn/jamm-sprint-4-backlog
